@@ -1,0 +1,30 @@
+.topbar-btn-container {
+    gap: 16px;
+  }
+  
+  .topbar-btn-container .login {
+    padding: 10px;
+    border-radius: 10px;
+  }
+  
+  .topbar-btn-container .login {
+    gap: 10px;
+  }
+  .topbar-btn-container .cart {
+    
+    padding: 10px;
+    border-radius: 10px;
+  }
+  
+  .topbar-btn-container .cart .cart-badge {
+    top: -10px;
+    right: -10px;
+    
+    color: white;
+  
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    
+  }
+  

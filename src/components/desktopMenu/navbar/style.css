@@ -1,0 +1,61 @@
+div.desktop-navbar-container div.navbar-line{
+    height: 65px;
+    
+    
+}
+div.desktop-navbar-container div.right{
+    gap: 24px;
+}
+
+div.sub-menu{
+    right: 0;
+    padding: 16px;
+    min-width: 240px;
+    background-color: #48484D;
+    border-bottom-right-radius: 6px;
+    
+}
+div.sub-menu div.sub-menu-item{
+    padding: 0px 4px;
+}
+div.sub-menu-item:hover .cls-2{
+    fill: #FF5050;
+}
+div.sub-menu-item:hover p{
+    font-family: "anjomanBold";
+    
+}
+div.sub-menu-item:hover .test{
+    color: #FF5050;
+}
+
+
+div.sub-menu div.sub-menu-item p{
+    padding: 20px 16px 0 0;
+    
+    
+    
+}
+div.sub-sub-menu{
+    background-color: rgb(255, 255, 255);
+    top: 0;
+    padding: 16px;
+    position: absolute;
+    min-width: 180px;
+    height: 100%;
+    right: 100%;
+    box-shadow: -4px 0 10px rgba(177, 177, 177, 0.1), 0 4px 10px rgba(177, 177, 177, 0.1), 0 -4px 10px rgba(177, 177, 177, 0.1);
+    border-bottom-left-radius:6px ;
+}
+
+div.desktop-navbar-container div.sub-menu-item:hover{
+    background-color: #B3B3B3;
+    border-radius: 6px;
+}
+
+
+
+
+.cls-2{
+    transition: 1s;
+}

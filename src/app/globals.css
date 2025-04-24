@@ -1,42 +1,239 @@
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+
+/* add fonts */
+@font-face {
+  font-family: 'anjomanBold';
+  src: url('/fonts/anjoman-bold.TTF') format('truetype');
+  
+}
+@font-face {
+  font-family: 'anjomanRegular';
+  src: url('/fonts/anjoman-regular.TTF') format('truetype');
+  
+}
+@font-face {
+  font-family: 'anjomanLight';
+  src: url('/fonts/anjoman-light.TTF') format('truetype');
+  
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
+/* add fonts */
 
-html,
-body {
-  max-width: 100vw;
-  overflow-x: hidden;
-}
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-* {
+/* reset css */
+*,
+::before,
+::after {
   box-sizing: border-box;
-  padding: 0;
-  margin: 0;
 }
-
-a {
-  color: inherit;
-  text-decoration: none;
+html, body, *  {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+  direction: rtl;
 }
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* reset css */
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
+
+/* costum class */
+
+.fs_8 {
+	font-size: clamp(8px, 2vw, 10px); /* فونت ریسپانسیو */
   }
-}
+  
+  .fs_9 {
+	font-size: clamp(9px, 2vw, 11px); 
+  }
+  
+  .fs_10 {
+	font-size: clamp(10px, 2vw, 12px); 
+  }
+  
+  .fs_11 {
+	font-size: clamp(11px, 2vw, 13px); 
+  }
+  
+  .fs_12 {
+	font-size: clamp(12px, 2vw, 14px); 
+  }
+  
+  .fs_13 {
+	font-size: clamp(13px, 2vw, 15px); 
+  }
+  
+  .fs_14 {
+	font-size: clamp(14px, 2vw, 16px); 
+  }
+  
+  .fs_15 {
+	font-size: clamp(15px, 2vw, 17px); 
+  }
+  
+  .fs_16 {
+	font-size: clamp(16px, 2vw, 18px); 
+  }
+  
+  .fs_17 {
+	font-size: clamp(17px, 2vw, 19px); 
+  }
+  
+  .fs_18 {
+	font-size: clamp(18px, 2vw, 20px); 
+  }
+  
+  .fs_19 {
+	font-size: clamp(19px, 2vw, 21px); 
+  }
+  
+  .fs_20 {
+	font-size: clamp(20px, 2vw, 22px); 
+  }
+  
+  .fs_21 {
+	font-size: clamp(21px, 2vw, 23px); 
+  }
+  
+  .fs_22 {
+	font-size: clamp(22px, 2vw, 24px); 
+  }
+  
+  .fs_23 {
+	font-size: clamp(23px, 2vw, 25px); 
+  }
+  
+  .fs_24 {
+	font-size: clamp(24px, 2vw, 26px); 
+  }
+  
+  .fs_25 {
+	font-size: clamp(25px, 2vw, 27px); 
+  }
+  
+  .fs_26 {
+	font-size: clamp(26px, 2vw, 28px); 
+  }
+  
+  .fs_27 {
+	font-size: clamp(27px, 2vw, 29px); 
+  }
+  
+  .fs_28 {
+	font-size: clamp(28px, 2vw, 30px); 
+  }
+  
+  .fs_29 {
+	font-size: clamp(29px, 2vw, 31px); 
+  }
+  
+  .fs_30 {
+	font-size: clamp(30px, 2vw, 32px); 
+  }
+  
+  .fs_31 {
+	font-size: clamp(31px, 2vw, 33px); 
+  }
+  
+  .fs_32 {
+	font-size: clamp(32px, 2vw, 34px); 
+  }
+  
+  .fs_33 {
+	font-size: clamp(33px, 2vw, 35px); 
+  }
+  
+  .fs_34 {
+	font-size: clamp(34px, 2vw, 36px); 
+  }
+  
+  .fs_35 {
+	font-size: clamp(35px, 2vw, 37px); 
+  }
+  
+  .fs_36 {
+	font-size: clamp(36px, 2vw, 38px); 
+  }
+  
+  .fs_37 {
+	font-size: clamp(37px, 2vw, 39px); 
+  }
+  
+  .fs_38 {
+	font-size: clamp(38px, 2vw, 40px); 
+  }
+  
+  .fs_39 {
+	font-size: clamp(39px, 2vw, 41px); 
+  }
+
+  .anjoman_bold{
+    font-family: "anjomanBold";
+  }
+  .anjoman_regular{
+    font-family: "anjomanRegular";
+  }
+  .anjoman_light{
+    font-family: "anjomanLight";
+    
+  }
+
+  .color_white{
+    color: white;
+  }
+  .color_dark{
+    color: #262626;
+  }
+  .color_black{
+    color: #000000;
+  }
+  .color_orange{
+    color: #FF5050;
+  }
+  .color_white{
+    color: #ffffff;
+  }
+  
+  .bg_color_white{
+    background-color: white;
+  }
+  .bg_color_orange{
+    background-color: #FF5050;
+  }
+  .bg_color_body{
+    background-color: #ededed8c;
+  }
+  .bg_color_gray{
+    background-color: #E2E2E2;
+  }
+  .bg_color_white{
+    background-color: #ffffff;
+  }
+  .cursor_pointer{
+    cursor: pointer;
+  }
+  
+
+  /* costum class */
