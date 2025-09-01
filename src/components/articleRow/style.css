@@ -1,0 +1,28 @@
+.article-row-container div.title-container{
+    margin-bottom: 24px;
+}
+.article-row-container{
+    border-radius: 6px;
+    position: relative;
+    z-index: 1;
+}
+.article-row-container .carousel-container{
+    border-radius: 6px;
+}
+.article-row-container .carousel-container .swiper{
+    border-radius: 6px!important;
+}
+.article-row-container div.arrow-right{
+    margin-left: 16px;
+}
+.article-row-container div.arrow-left{
+    margin-right: 16px;
+}
+@media screen and (max-width:992px){
+    .article-row-container div.arrow-right{
+    margin-left: 4px;
+}
+    .article-row-container div.arrow-left{
+    margin-right: 4px;
+}
+}

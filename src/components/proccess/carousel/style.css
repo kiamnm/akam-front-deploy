@@ -1,0 +1,22 @@
+.proccess-container .carousel-container {
+    gap: 8px;
+}
+
+@media screen and (max-width:792px) {
+    .proccess-container .carousel-container {
+        gap: 0px;
+    }
+    
+}
+
+
+
+div.proccess-container div.swiper{
+    border-radius: 8px;
+  }
+ div.proccess-container div.swiper-slide{
+    border-radius: 8px;
+  }
+ div.proccess-container div.slide-wrapper{
+    border-radius: 8px;
+  }

@@ -1,0 +1,29 @@
+
+.page-number {
+  padding: 0.4rem 1rem;
+  background: #E2E2E2;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  color: black;
+  
+}
+
+.arrow {
+ cursor: pointer;
+  background: none;
+  
+}
+
+
+.page-number.active {
+  background: #FF5050;
+  color: #fff;
+}
+
+.arrow.disabled {
+  background: none;
+  color: #999;
+  cursor: not-allowed;
+}

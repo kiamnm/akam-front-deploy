@@ -1,0 +1,119 @@
+.product-gallery-container h2{
+  margin-bottom: 24px;
+}
+.product-gallery-container .gallery-container{
+gap: 24px 0px;
+}
+.product-gallery-container .item-container{
+    height: 180px;
+    box-shadow: 1px 1px 4px 2px rgba(185, 185, 185, 0.4);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.2s;
+    gap: 24px;
+}
+@media screen and (max-width:768px) {
+  .product-gallery-container .item-container{
+    height: 120px;
+    gap: 16px;
+    
+}
+.gallery-icon{
+  width: 36px!important;
+  height: 36px!important;
+}
+}
+.gallery-icon{
+  width: 64px;
+  height: 64px;
+}
+.product-gallery-container .item-container:hover{
+    background-color:#FF5050 ;
+}
+.product-gallery-container .gallery-icon .clss-1{
+fill: none;
+  stroke: #000;
+}
+.product-gallery-container .gallery-icon .clss-2{
+    fill: #FF5050;
+  stroke: #000;
+  stroke-miterlimit: 10;
+  
+}
+.product-gallery-container .item-container:hover .clss-2{
+    fill: none;
+  stroke: #ffffff;
+}
+.product-gallery-container .item-container:hover .clss-1{
+    stroke: #ffffff;
+}
+.product-gallery-container .item-container:hover p{
+    color: white;
+}
+
+
+
+/* میلگرد */
+
+.cls-2-milgerd,
+.cls-3-milgerd {
+  fill: none;
+  stroke: #050505;
+}
+.cls-1-milgerd{
+stroke: #050505;
+fill: #FF5050;
+}
+
+.cls-2-milgerd,
+.cls-3-milgerd {
+  stroke-miterlimit: 10;
+}
+
+.cls-3-milgerd {
+  stroke-width: 0.75px;
+}
+.product-gallery-container .item-container.milgerd:hover  .cls-1-milgerd{
+  stroke: white;
+}
+.product-gallery-container .item-container.milgerd:hover .cls-2-milgerd{
+    stroke: white;
+}
+.product-gallery-container .item-container.milgerd:hover .cls-3-milgerd{
+    stroke: white;
+}
+
+
+/* //قوطی */
+.cls-1-ghoti {
+  fill: #ec3535;
+  stroke: #020000;
+}
+
+.cls-2-ghoti {
+  fill: #ffffff;
+  stroke: #161616;
+}
+
+.cls-3-ghoti {
+  fill: none;
+  stroke: #020000;
+}
+
+/* نبشی */
+.cls-1-nabshi {
+  fill: none;
+  stroke: #050505;
+}
+.cls-2-nabshi {
+  fill: #FF5050;
+  stroke: #FF5050;
+}
+.cls-3-nabshi {
+  fill: rgb(101, 158, 75);
+  stroke: #0015d6;
+}

@@ -78,7 +78,7 @@ export default function MobileSideMenu({isSideMenuOpen,setIsSideMenuOpen}) {
               className={`px-3 mt-2 sub-container d-flex flex-column bg_color_white py-3 ${openIndex === index ? "d-flex" : "d-none"}`}
             >
               {item.subItems.map((subItem, subIndex) => (
-                <Link href="/test" key={subIndex} className='p-0 m-0 fs_12 color_black text-decoration-none anjoman_bold'>{subItem}</Link>
+                <Link onClick={()=>{setIsSideMenuOpen(false)}} href={subItem.href} key={subIndex} className='p-0 m-0 fs_12 color_black text-decoration-none anjoman_bold'>{subItem.title}</Link>
               ))}
             </div>
           </div>
@@ -87,7 +87,7 @@ export default function MobileSideMenu({isSideMenuOpen,setIsSideMenuOpen}) {
 {ItemWithoutSub.map((item,index)=>
           <div key={index} className='item-container pt-3 w-100'>
           <Link
-          
+          onClick={()=>{setIsSideMenuOpen(false)}}
             href={item.href}
             className='item color_white w-100  fs_14 anjoman_bold text-decoration-none'>
             {item.title}

@@ -1,20 +1,61 @@
 
 /* add fonts */
 @font-face {
+  font-family: 'anjomanUltraBold';
+  src: url('/fonts/anjoman-ultrabold.woff2') format('truetype');
+  
+}
+@font-face {
   font-family: 'anjomanBold';
-  src: url('/fonts/anjoman-bold.TTF') format('truetype');
+  src: url('/fonts/anjoman-bold.woff2') format('truetype');
+  
+}
+@font-face {
+  font-family: 'anjomanSemiBold';
+  src: url('/fonts/anjoman-semibold.woff2') format('truetype');
+  
+}
+@font-face {
+  font-family: 'anjomanMedium';
+  src: url('/fonts/anjoman-medium.woff2') format('truetype');
   
 }
 @font-face {
   font-family: 'anjomanRegular';
-  src: url('/fonts/anjoman-regular.TTF') format('truetype');
+  src: url('/fonts/anjoman-regular.woff2') format('truetype');
   
 }
 @font-face {
   font-family: 'anjomanLight';
-  src: url('/fonts/anjoman-light.TTF') format('truetype');
+  src: url('/fonts/anjoman-light.woff2') format('truetype');
   
 }
+@font-face {
+  font-family: 'anjomanNumBold';
+  src: url('/fonts/anjoman-num-bold.woff2') format('woff2');
+  
+}
+@font-face {
+  font-family: 'anjomanNumMedium';
+  src: url('/fonts/anjoman-num-medium.woff2') format('woff2');
+  
+}
+@font-face {
+  font-family: 'anjomanNumRegular';
+  src: url('/fonts/anjoman-num-regular.woff2') format('woff2');
+  
+}
+@font-face {
+  font-family: 'anjomanNumLight';
+  src: url('/fonts/anjoman-num-light.woff2') format('woff2');
+  
+}
+@font-face {
+  font-family: 'anjomanNumExtraBold';
+  src: url('/fonts/anjoman-num-extrabold.woff2') format('woff2');
+  
+}
+
 
 /* add fonts */
 
@@ -188,9 +229,18 @@ table {
   .fs_39 {
 	font-size: clamp(39px, 2vw, 41px); 
   }
+.anjoman_ultrabold{
+font-family:'anjomanUltraBold' ;
 
+}
   .anjoman_bold{
     font-family: "anjomanBold";
+  }
+  .anjoman_semibold{
+font-family: 'anjomanSemiBold';
+  }
+  .anjoman_medium{
+font-family: 'anjomanMedium';
   }
   .anjoman_regular{
     font-family: "anjomanRegular";
@@ -199,6 +249,21 @@ table {
     font-family: "anjomanLight";
     
   }
+  .anjoman_num_extrabold{
+  font-family: "anjomanNumExtraBold";
+}
+.anjoman_num_bold{
+  font-family: "anjomanNumBold";
+}
+.anjoman_num_medium{
+  font-family: "anjomanNumMedium";
+}
+.anjoman_num_regular{
+  font-family: "anjomanNumRegular";
+}
+.anjoman_num_light{
+  font-family: "anjomanNumLight";
+}
 
   .color_white{
     color: white;
@@ -208,6 +273,9 @@ table {
   }
   .color_black{
     color: #000000;
+  }
+  .color_text{
+    color:#4b4b4b;
   }
   .color_orange{
     color: #FF5050;
@@ -222,8 +290,11 @@ table {
   .bg_color_orange{
     background-color: #FF5050;
   }
+  .bg_color_black{
+    background-color: black
+  }
   .bg_color_body{
-    background-color: #ededed8c;
+    background-color: #ededed;
   }
   .bg_color_gray{
     background-color: #E2E2E2;
@@ -231,9 +302,34 @@ table {
   .bg_color_white{
     background-color: #ffffff;
   }
+  .bg_color_dark{
+    background-color: #48484D;
+  }
   .cursor_pointer{
     cursor: pointer;
   }
+  .text_justify{
+    text-align: justify;
+  }
   
-
+.lh_0{
+  line-height: 0;
+}
+.lh_40{
+  line-height: 40px!important;
+}
   /* costum class */
+
+
+/* toastify config toastify config toastify config */
+.Toastify__toast{
+  font-family: "anjomanMedium"!important;
+  font-size: clamp(14px, 2vw, 16px)!important; 
+  padding-right: 30px;
+
+}
+div.Toastify__toast-icon{
+  margin-right: 20px!important;
+  
+ 
+}

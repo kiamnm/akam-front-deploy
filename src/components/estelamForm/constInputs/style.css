@@ -1,0 +1,41 @@
+.estelam-const-input-container div.inputs-container{
+    gap: 64px;
+    
+    
+}
+.estelam-const-input-container div.inputs-container div.item-container{
+    width: 400px;
+}
+.estelam-const-input-container label{
+    padding-bottom: 8px;
+}
+div.inputs-container div.item-container input{
+    width: 100%;
+    height: 44px;
+    background-color: #EDEDED;
+    border-radius: 6px;
+    font-size: 14px;
+    
+    padding: 0px 8px;
+    font-family: "anjomanNumRegular";
+    border: 1px solid #c5c5c5;
+}
+
+div.inputs-container div.item-container input:focus {
+    border: 1px solid #6e6e6e;
+    outline: none; /* اختیاری: برای حذف حاشیه پیش‌فرض مرورگر */
+}
+@media screen and (max-width:960px){
+    .estelam-const-input-container div.inputs-container div.item-container{
+        width: 100%;
+        
+    }
+    
+    .estelam-const-input-container div.inputs-container{
+    gap: 16px;
+    max-width: 100%;
+        margin: auto;
+        gap: 16px;
+    
+}
+}

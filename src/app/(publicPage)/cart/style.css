@@ -1,0 +1,69 @@
+ div.cart-page-container{
+  position: relative;
+  z-index: 1;
+ }
+ .table-wrapper {
+  border-radius: 6px;
+  overflow: hidden;
+
+  padding: 0;
+ 
+}
+.table-wrapper table {
+  border-collapse: separate !important;
+  border-spacing: 0;
+} 
+table {
+  height: 100%!important;
+}
+.table-wrapper table{
+  margin: 0;
+  padding: 0;
+}
+.table-wrapper table th{
+    padding: 14px 0;
+}
+ .table input.amount{
+  background-color: #ebeaea;
+  border-radius: 4px;
+  direction: ltr;
+  text-align:center;
+ }
+ .table input.amount:focus{
+  outline: none;
+  border: 1px solid rgb(121, 121, 121);
+ }
+div.factor-result-container{
+  height: 220px;
+  width: 100%;
+  background-color: white;
+}
+ div.factor-result-container .result{
+  height: 100%;
+ }
+div.factor-result-container div.calculation{
+border-left:1px solid black;
+height: 100%;
+}
+div.factor-result-container button{
+  border-radius: 4px;
+  transition: 0.3s ease;
+}
+
+div.factor-result-container button:hover{
+  border-radius: 4px;
+  background-color: rgb(88, 88, 88);
+}
+
+@media screen and (max-width:768px){
+  div.factor-result-container{
+ height: auto;
+  width: 100%;
+  background-color: white;
+}
+div.factor-result-container div.calculation{
+border-bottom:1px solid black;
+border-left: none;
+height: 100%;
+}
+}

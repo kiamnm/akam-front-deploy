@@ -1,0 +1,92 @@
+
+div.footer-component-container {
+  background-image: url("/images/footer-background.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+ 
+position: absolute;
+z-index: 0;
+  /* اضافه کن این خط رو برای بالا رفتن */
+  margin-top: -250px;
+
+  /* اگه خواستی محتوا با حاشیه بالا برخورد نکنه، padding بده */
+  padding-top: 400px;
+  
+}
+ .company-right{
+  word-spacing: 8px;
+  margin-top: 96px;
+  margin-bottom: 32px;
+ 
+ }
+
+
+
+
+div.footer_container div.right-container {
+  gap: 96px;
+}
+
+div.footer_container div.menu-container,
+div.access-container {
+  gap: 12px;
+}
+
+div.footer_container div.right-container .logo {
+  margin-bottom: 16px;
+}
+div.footer_container div.right-container .logo-container {
+  gap: 32px;
+}
+div.footer_container .footer-contact{
+  gap: 8px;
+
+}
+div.footer_container .footer-contact p.info.phone{
+  letter-spacing: 4px;
+}
+div.footer_container .left-container{
+  gap: 16px;
+}
+
+@media screen and (max-width: 1200px) {
+  div.footer_container div.right-container {
+    gap: 50px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  div.left-container {
+    max-width: 40%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  div.footer_container div.right-container {
+    gap: 30px;
+  }
+}
+@media screen and (max-width: 768px) {
+  div.left-container {
+    max-width: 100%;
+  }
+  div.footer_container div.right-container {
+    gap: 8px;
+  }
+  div.footer_container div.left-container {
+    margin-bottom: 16px;
+  }
+    div.footer_container .social img{
+      width: 28px;
+      height: 28px;
+    }
+    div.footer_container .logo-container {
+      margin-top: 16px;
+    }
+    .company-right{
+  
+  margin-top: 32px;
+  margin-bottom: 96px;
+ 
+ }
+}

@@ -1,0 +1,30 @@
+div.our-trust-container{
+    height: 200px;
+    background-color: white;
+    border-radius: 8px;
+    max-width: 50%;
+    width: 50%;
+    padding: 16px;
+}
+@media screen and (max-width:768px) {
+    div.our-trust-container{
+    height: 240px;
+    
+}
+}
+div.our-trust-container img.title-logo{
+    width: 28px;
+    height: 28px;
+}
+div.our-trust-container div.content-container {
+    height: 100%;
+}
+div.our-trust-container div.title{
+   gap: 8px; 
+}
+@media screen and (max-width:992px){
+    div.our-trust-container{
+        max-width: 100%;
+        width: 100%;
+    }
+}

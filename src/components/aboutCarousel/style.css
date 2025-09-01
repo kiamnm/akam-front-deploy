@@ -1,0 +1,17 @@
+div.about-carousel-container{
+    gap: 16px;
+}
+div.about-carousel-container div.each-item{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    border-radius: 4px;
+}
+div.about-carousel-container div.each-item img{
+    width: 70px;
+    height:70px;
+}
+div.arrow-right, div.arrow-left{
+    background-color: #D8D8DB;
+    border-radius: 50%;
+}

@@ -1,0 +1,103 @@
+div.blog-header-container {
+  height: 400px;
+  gap: 16px;
+}
+.blog-header-container div.left {
+  gap: 16px;
+  width: 45%;
+  height: 100%;
+}
+.blog-header-container .right {
+  width: 55%;
+  height: 100%;
+  background-color: blue;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+}
+.blog-header-container .right img {
+  transition: 0.3s ease-in-out;
+}
+.blog-header-container .right:hover img {
+  transform: scale(1.1);
+}
+.blog-header-container .right div.info-container{
+bottom: 40px;
+}
+.blog-header-container  div.info-container{
+  gap: 20px;
+}
+.blog-header-container .top div.info-container, .blog-header-container .bottom div.info-container{
+  bottom: 20px;
+}
+.blog-header-container .layout {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(59, 59, 59, 0.6);
+  position: absolute;
+  z-index: 2;
+  border-radius: 10px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.blog-header-container .layout:hover {
+  background-color: rgba(59, 59, 59, 0);
+}
+.blog-header-container div.left .top img {
+  transition: 0.3s ease-in-out;
+}
+.blog-header-container div.left .top:hover img {
+  transform: scale(1.1);
+}
+.blog-header-container div.left .top {
+  height: 50%;
+  width: 100%;
+  background-color: red;
+  border-radius: 6px;
+  position: relative;
+  overflow: hidden;
+}
+.blog-header-container div.left .bottom img {
+  transition: 0.3s ease-in-out;
+}
+.blog-header-container div.left .bottom:hover img {
+  transform: scale(1.1);
+}
+.blog-header-container div.left .bottom {
+  height: 50%;
+  width: 100%;
+  background-color: yellow;
+  border-radius: 6px;
+  position: relative;
+  overflow: hidden;
+}
+
+
+
+@media screen and (max-width:768px){
+  div.blog-header-container {
+  height: auto;
+  gap: 16px;
+}
+  .blog-header-container div.left {
+ 
+  width: 100%;
+  
+}
+.blog-header-container div.left .top{
+height: 150px;
+}
+.blog-header-container div.left .bottom{
+height: 150px;
+}
+.blog-header-container .right {
+  width: 100%;
+  height: 100%;
+  background-color: blue;
+  border-radius: 10px;
+ height: 150px;
+}
+.blog-header-container .right div.info-container{
+bottom: 20px;
+}
+}

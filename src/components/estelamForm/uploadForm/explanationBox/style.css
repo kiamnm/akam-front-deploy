@@ -1,0 +1,31 @@
+.explenation-box-container{
+    width: 864px;
+    margin: 16px auto;
+    
+    
+}
+.explenation-box-container label{
+    margin-bottom: 8px;
+    
+}
+
+.explenation-box-container textarea{
+    background-color: #EDEDED;
+    height: 100px;
+    border-radius: 8px;
+    font-family: "anjomanNumRegular";
+    border: 1px solid #c5c5c5;
+    padding: 8px;
+}
+.explenation-box-container textarea:focus {
+    border: 1px solid #414141;
+    outline: none; /* اختیاری: برای حذف حاشیه پیش‌فرض مرورگر */
+    border: 1px solid #6e6e6e;
+    outline: none; /* اختیاری: برای حذف حاشیه پیش‌فرض مرورگر */
+}
+@media screen and (max-width:900px){
+    .explenation-box-container{
+        max-width: 100%;
+         margin: 16px auto;
+    }
+}

@@ -1,0 +1,49 @@
+
+.custom-table {
+  border-collapse: collapse;
+  width: 100%;
+  border-radius: 8px!important;
+  overflow: hidden;
+  direction: rtl;
+   box-shadow: 4px 4px 6px rgba(145, 145, 145, 0.3);
+   
+}
+
+.custom-table thead th {
+  border-bottom: 2px solid #333; /* خط پررنگ زیر عنوان */
+  background-color: #f0f0f0;
+  padding: 10px;
+  text-align: center;
+}
+
+.custom-table tbody td {
+  border-bottom: 1px solid #ddd; /* خط کمرنگ بین ردیف‌ها */
+  padding: 10px;
+  text-align: center;
+}
+
+/* رنگ متناوب برای ردیف‌ها */
+.custom-table tbody tr:nth-child(odd) {
+  background-color: #fafafa;
+}
+
+.custom-table tbody tr:nth-child(even) {
+  background-color: #f5f5f5;
+}
+.price-history-container .see-more{
+    border-radius: 6px;
+    transition: 0.3s;
+}
+.price-history-container .see-more:hover{
+   background-color: #7e7e7e;
+}
+
+div.price-history-container button{
+  padding: 4px 16px;
+}
+
+@media screen and (max-width:768px) {
+  div.price-history-container button{
+    width: 100%;
+  }
+}

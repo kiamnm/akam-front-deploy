@@ -1,0 +1,57 @@
+div.costumers-news-container{
+    gap: 24px;
+}
+.home-header-space{
+    margin-top: 16px;
+}
+.product-gallery-space{
+    margin-top: 48px;
+}
+.home-table-space{
+    margin-top: 48px;
+}
+.estelam-form-space{
+    margin-top: 48px;
+}
+.proccess-space{
+    margin-top: 48px;
+}
+.homebanner-space{
+    margin-top: 48px;
+}
+.chart-space{
+    margin-top: 48px;
+}
+.new-costumer-space{
+    margin-top: 48px;
+}
+.best-article-space{
+     margin-top: 48px;
+}
+@media screen and (max-width:768px) {
+    .product-gallery-space{
+    margin-top: 24px;
+}
+.home-table-space{
+    margin-top: 24px;
+}
+.estelam-form-space{
+    margin-top: 48px;
+}
+.proccess-space{
+    margin-top: 24px;
+}
+.homebanner-space{
+    margin-top: 24px;
+}
+.chart-space{
+    margin-top: 24px;
+}
+.new-costumer-space{
+    margin-top: 24px;
+}
+.best-article-space{
+     margin-top: 24px;
+}
+}
+

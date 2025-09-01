@@ -1,0 +1,20 @@
+div.estelam-form-container button.manual{
+    padding: 8px;
+    border-top: 1px solid #B3B3B3;
+    border-right:1px solid #B3B3B3 ;
+    border-left:1px solid #B3B3B3 ;
+    border-top-right-radius: 4px;
+    }
+    div.estelam-form-container button.upload{
+        padding: 8px;
+        border-top: 1px solid #B3B3B3;
+        
+        border-left:1px solid #B3B3B3 ;
+        border-top-left-radius: 4px;
+    }
+    div.estelam-form-container .estelam-btn.active{
+    background-color: white;
+    }
+    div.estelam-form-container .estelam-btn.not-active{
+    background-color: #E2E2E2;
+    }

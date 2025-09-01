@@ -1,0 +1,12 @@
+div.orders-status-container .box-shadow{
+box-shadow: 0 2px 8px rgba(131, 131, 131, 0.089);
+}
+div.orders-status-container .waiting span:nth-child(1){
+background-color: #fff3cd;
+color: #856404;
+}
+
+div.orders-status-container .sucess span:nth-child(1){
+    background-color: #D4EDDA;
+color: #155724;
+}

@@ -1,0 +1,10 @@
+div.order-tab-container{
+    height: calc(100dvh - 136px);
+    
+    
+}
+@media screen and (max-width:992px) {
+    div.order-tab-container{
+        height: auto;
+    }
+}

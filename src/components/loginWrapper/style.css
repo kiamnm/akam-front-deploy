@@ -1,0 +1,15 @@
+.login-page-container .phone-validation-container{
+    max-width: 500px;
+    margin: auto;
+    background-color: white;
+    border-radius: 8px;
+}
+
+
+@media screen and (max-width:768px) {
+    .login-page-container .phone-validation-container{
+    
+        width: 100%;
+    }
+    
+}

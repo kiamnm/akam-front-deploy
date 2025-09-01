@@ -1,0 +1,42 @@
+div.fullscreen-otp-container{
+    position: relative;
+   
+    margin: auto;
+height: 100vh;
+position: fixed;
+top: 0;
+bottom: 0;
+left: 0;
+right: 0;
+z-index: 3;
+
+
+}
+div.fullscreen-otp-container div.layout{
+width: 100%;
+height: 100vh;
+position: fixed;
+top: 0;
+bottom: 0;
+left: 0;
+right: 0;
+background-color: rgba(85, 88, 88, 0.322);
+z-index: 7;
+}
+div.six-digit-modal-container{
+    
+    z-index: 1001!important;
+    position: absolute;
+    background-color: white;
+    border-radius: 8px;
+}
+div.six-digit-modal-container button{
+    border-radius: 6px;
+    transition: 0.3s ease;
+}
+div.six-digit-modal-container button:hover{
+    background-color: rgb(121, 121, 121);
+}
+.underline{
+    border-bottom: 1px solid #FF5050 ;
+}

@@ -1,0 +1,31 @@
+.submit-manual-form-btn{
+    padding-left: calc(50% - 432px);
+}
+.submit-manual-form-btn button{
+    
+    width: 240px;
+    height: 36px;
+    
+    border-radius: 4px;
+    transition:  0.3s ease,
+}
+.submit-manual-form-btn button:hover{
+    background-color: #48484D;
+}
+.submit-manual-form-btn button:active{
+     background-color: #707070;
+}
+
+@media screen and (max-width:900px){
+    .submit-manual-form-btn{
+        padding-left: 0;
+    }
+    div.submit-manual-form-btn{
+        justify-content: center;
+    }
+    .submit-manual-form-btn button{
+    
+        width: 80%;
+       
+    }
+}

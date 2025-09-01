@@ -1,0 +1,14 @@
+.register-page-container .phone-validation-container{
+    
+    background-color: white;
+    border-radius: 6px;
+}
+
+
+@media screen and (max-width:768px) {
+    .register-page-container .phone-validation-container{
+    
+        width: 100%;
+    }
+    
+}

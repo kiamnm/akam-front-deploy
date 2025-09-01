@@ -3,15 +3,29 @@ div.down-menu-container {
   z-index: 3;
   bottom: 0;
   width: 100%;
-  height: 60px;
-  background-color: #ff5050;
-}
-div.down-menu-container div.item-container {
   height: 64px;
+  background-color: #ff5050;
+  padding: 0 20px;
 }
-div.down-menu-container div.item-container .active{
+div.down-menu-container .title{
+  padding-top: 4px;
+}
+div.down-menu-container .active{
     color: rgb(255, 255, 255);
+    
 }
-div.down-menu-container div.item-container .not-active{
-    color: rgba(255, 255, 255, 0.87);
+div.down-menu-container  .not-active{
+    color: rgba(250, 250, 250, 0.8);
+}
+div.down-menu-container span.count{
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  left: 30px;
+  border-radius: 50%;
+  
+  background-color: white!important;
+  color: black;
 }

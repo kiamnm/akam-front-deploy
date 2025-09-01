@@ -1,0 +1,70 @@
+.article-row-container div.item-container{
+border-radius: 6px;
+
+}
+.article-row-container div.item-container .img-container{
+    height: 160px;
+    overflow: hidden;
+     border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+.article-row-container div.item-container img{
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    transition: 0.3s ease;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    
+}
+.article-row-container  .title {
+  white-space: nowrap; /* جلوگیری از شکستن متن به خط بعدی */
+  overflow: hidden; /* مخفی کردن متن اضافی */
+  text-overflow: ellipsis; /* اضافه کردن ... به انتهای متن */
+  max-width: 100%; /* یا یه عرض خاص مثل 200px، بسته به نیاز */
+}
+.article-row-container div.item-container .date-container{
+    gap: 8px;
+    margin-bottom: 8px;
+}
+.article-row-container div.item-container .detail-container{
+    padding: 16px;
+}
+
+.article-row-container div.item-container img:hover{
+    transform: scale(1.2);
+    
+}
+.article-row-container div.item-container .detail-container{
+    background-color:#48484D ;
+}
+.article-row-container div.item-container .button-container{
+    width: 100%;
+    padding: 8px 0;
+    gap: 4px;
+    margin-top: 16px;
+     background-color:#FF5050 ;
+    border-radius: 4px;
+    transition: 0.3s ease;
+    
+}
+
+.article-row-container div.item-container .article-btn-text{color: white;}
+.article-row-container div.item-container .button-container:hover {
+    background-color:#D8D8DB ;
+    color: black;
+}
+.article-row-container div.item-container .article-btn-text{color: white;}
+.article-row-container div.item-container .button-container:active {
+    background-color:#7a7a7a ;
+    color: white;
+}
+.article-row-container div.item-container .button-container:hover .article-btn-text {
+    color: black; /* تغییر رنگ متن */
+  }
+.article-row-container div.item-container .detail-container{
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+

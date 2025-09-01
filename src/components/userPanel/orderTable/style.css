@@ -1,0 +1,96 @@
+div.order-table-container {
+  box-shadow: 0 4px 8px rgba(131, 131, 131, 0.212);
+  height: 100%;
+  background-color: white;
+}
+div.order-table-container th {
+  font-weight: 500;
+  color: #4b4b4b;
+}
+div.order-table-container td{
+ color: #4b4b4b;
+}
+div.order-table-container div.phase {
+  width: 180px !important;
+}
+
+div.order-table-container .table{
+    height: 100%;
+}
+div.order-table-container .desktop-table-container{
+  height: 100%;
+}
+div.order-table-container .phase-1 {
+  background-color: #fff3cd;
+  color: #856404;
+}
+div.order-table-container .phase-2 {
+  background-color: #fff3cd;
+  color: #856404;
+}
+div.order-table-container .phase-4 {
+  background-color: #fff3cd;
+  color: #856404;
+}
+div.order-table-container .phase-5 {
+  background-color: #fff3cd;
+  color: #856404;
+}
+div.order-table-container .phase-6 {
+  background-color: #fff3cd;
+  color: #856404;
+}
+div.order-table-container .phase-7 {
+  background-color: #D4EDDA;
+  color: #155724;
+}
+div.order-table-container .phase-3 {
+  background-color: #fff3cd;
+  color: #856404;
+}
+
+div.order-table-container .phase-8 {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+div.order-table-container .phase-9 {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+thead{
+    height: 48px;
+}
+.order-table-container table td {
+  height: calc(100% / 6); /* یا هر ارتفاعی که ردیف‌هات دارن */
+
+}
+div.button-container :nth-child(1){
+  flex-grow: 3;
+  padding: 6px 0px;
+}
+div.button-container :nth-child(2){
+  flex-grow: 1;
+  padding: 6px 0px;
+}
+@media screen and (max-width:992px) {
+  div.order-table-container {
+  box-shadow: none;
+  background-color: #ededed;
+  height: auto;
+  
+  border-radius: 0!important;
+  
+}
+div.mobile-order-container{
+  width: 100%;
+  
+ 
+}
+}
+/* @media screen and (max-width:768px) {
+  div.order-table-container {
+  
+  height: auto;
+}
+} */

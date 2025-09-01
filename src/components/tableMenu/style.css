@@ -1,0 +1,51 @@
+.table-menu-container{
+    gap: 16px;
+    overflow-x: auto;
+  white-space: nowrap;
+  flex-wrap: nowrap;
+   scrollbar-width: none; /* برای فایرفاکس */
+  -ms-overflow-style: none;
+  scroll-behavior: smooth;
+  scrollbar-width: thin;
+}
+.table-menu-container::-webkit-scrollbar {
+  display: none; 
+    height: 6px;
+  }
+  .table-menu-container::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+  }
+div.table-menu-container .item-container{
+    
+    
+    border-radius: 6px;
+    
+    transition: 0.3s;
+}
+div.table-menu-container .item-container.not-active{
+    
+    
+    border-radius: 6px;
+    background-color: rgb(85, 85, 85);
+    transition: 0.3s;
+}
+div.table-menu-container .item-container.active{
+  background-color:#FF5050 ;
+}
+div.table-menu-container .item-container.active:hover{
+  background-color:#FF5050 ;
+}
+div.table-menu-container .item-container.not-active:hover{
+    
+    
+    background-color: #1d1d1d;
+}
+
+@media screen and (max-width:992px) {
+    .table-menu-container{
+        gap: 10px;
+        
+    }
+}
+

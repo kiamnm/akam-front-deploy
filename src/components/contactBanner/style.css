@@ -1,0 +1,25 @@
+div.contact-banner-container{
+    width: 60%;
+    border-radius: 8px;
+    height: 180px;
+    
+}
+
+div.contact-banner-container img{
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+@media screen and (max-width:768px) {
+    div.contact-banner-container{
+        width: 100%;
+        height: 110px;
+    }
+    div.contact-banner-container img{
+        
+        height: 110px;
+        
+    }
+}

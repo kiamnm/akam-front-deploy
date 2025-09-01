@@ -1,0 +1,25 @@
+.each-product-page-container .header-container .submit-btn {
+  margin-top: auto;
+}
+.each-product-page-container .header-container  div.submit-btn button{
+    border-radius: 4px;
+    transition: 0.3s;
+    padding: 6px 8px;
+}
+@media screen and (max-width: 768px) {
+    div.submit-btn{
+        width: 100%;
+    }
+    .each-product-page-container .header-container  div.submit-btn button{
+        padding: 8px 8px;
+        width: 100%;
+        border-radius: 4px;
+        font-size: 14px;
+        text-align: center;
+        
+        
+    }
+}
+.each-product-page-container .header-container  div.submit-btn button:hover{
+    background-color: rgb(95, 95, 95);
+}

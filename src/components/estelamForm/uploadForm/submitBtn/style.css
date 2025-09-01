@@ -1,0 +1,36 @@
+.submit-upload-form-btn{
+    padding-left: calc(50% - 432px);
+}
+.submit-upload-form-btn button{
+    
+    width: 240px;
+    height: 36px;
+    color: #EDEDED;
+    border-radius: 4px;
+    transition:  0.3s ease,
+}
+.submit-upload-form-btn .disable{
+    background-color: #888888;
+}
+.submit-upload-form-btn .disable:hover{
+    background-color: #888888;
+}
+.submit-upload-form-btn button:hover{
+    background-color: #48484D;
+}
+.submit-upload-form-btn button:active{
+     background-color: #707070;
+}
+
+@media screen and (max-width:900px){
+    .submit-upload-form-btn{
+        padding-left: 0;
+    }
+    div.submit-upload-form-btn{
+        justify-content: center;
+    }
+    .submit-upload-form-btn button{
+    
+    width: 80%;
+    }
+}

@@ -1,0 +1,31 @@
+div.product-table-container{
+    user-select: none;
+}
+
+.fs_table_title{
+    font-size: 14px;
+}
+div.table-responsive {
+    border-radius: 8px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* برای اینکه border-radius درست اعمال بشه */
+    max-height: 400px;
+    overflow-y: auto;
+    direction: ltr;
+  }
+  .table-row-detail{
+    border: 1px solid rgb(189, 189, 189);
+    border-radius: 8px;
+    padding: 16px 16px;
+    gap: 16px;
+  }
+@media screen and (max-width:900px){
+    .fs_table_title{
+        font-size: 12px;
+    }
+    div.table-responsive {
+        
+        max-height: 350px;
+        
+      }
+}

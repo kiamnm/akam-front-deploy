@@ -1,0 +1,8 @@
+
+div.six-digit-container  button.next{
+    transition: 0.3s ease;
+}
+
+div.six-digit-container  button.next:hover{
+background-color: #48484D;
+}

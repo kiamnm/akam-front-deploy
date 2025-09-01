@@ -1,0 +1,71 @@
+.each-product-page-container{
+    position: relative;
+    z-index: 1;
+}
+
+
+.each-product-page-container .header-container div.descript-container {
+    width: 60%;
+}
+.each-product-page-container .header-container div.img-container{
+    width: 40%;
+    
+}
+.each-product-page-container .header-container div.img-container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+    
+}
+.align-cell{
+    text-align: center;      /* وسط افقی */
+  vertical-align: middle;
+}
+th.mega-title{
+    background-color: #48484D!important;
+}
+.each-product-page-container .header-container .table-rounded {
+  border-collapse:separate;
+  border-spacing: 0;
+  border-radius: 8px!important;
+  overflow: hidden; /* برای مخفی کردن گوشه‌های بیرون‌زده */
+}
+.each-product-page-container .header-container th.price{
+    color: #FF5050;
+}
+
+
+.each-product-page-container .header-container  table{
+    border-radius: 6px!important;
+    overflow: hidden;
+    height: 100%;
+    box-shadow: 4px 4px 6px rgba(145, 145, 145, 0.3);
+}
+
+ .each-product-page-container  div.expelenation-box{
+    border-radius: 6px;
+    box-shadow: 4px -4px 12px rgba(145, 145, 145, 0.3);
+ }
+ 
+ div.each-product-page-container div.expelenation-box p {
+  font-size: 14px;
+  font-family: "anjomanRegular";
+  text-align: justify;
+  margin-bottom: 8px;
+  line-height: 30px;
+}
+div.each-product-page-container div.expelenation-box h3 {
+  font-size: 16px;
+  font-family: "anjomanBold";
+  text-align: justify;
+  margin-bottom: 4px;
+}
+@media screen and (max-width:768px){
+    .each-product-page-container .header-container div.descript-container {
+    width: 100%;
+}
+.each-product-page-container .header-container div.img-container{
+    width: 100%;
+}
+}

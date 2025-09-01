@@ -1,0 +1,48 @@
+.order-filter-container p.title {
+  border-bottom: 1px solid black;
+}
+.custom-checkbox {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-size: 14px;
+  position: relative;
+  user-select: none;
+}
+
+.custom-checkbox input {
+  display: none; /* مخفی کردن input اصلی */
+}
+
+.checkmark {
+  width: 18px;
+  height: 18px;
+  border: 2px solid #aaa;
+  border-radius: 4px;
+  display: inline-block;
+  margin-left: 8px;
+  position: relative;
+  transition: all 0.2s ease;
+}
+
+.custom-checkbox input:checked + .checkmark {
+  background-color: #FF5050; /* رنگ داخل چک‌باکس */
+  border-color: #FF5050;
+}
+
+.custom-checkbox input:checked + .checkmark::after {
+  content: "";
+  position: absolute;
+  left: 5px;
+  top: 1px;
+  width: 5px;
+  height: 10px;
+  border: solid white; /* رنگ تیک */
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+}
+
+.label-text {
+  font-size: 13px;
+}
+

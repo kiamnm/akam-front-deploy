@@ -1,0 +1,10 @@
+div.proccess-carousel-item{
+    border-radius: 8px;
+padding: 16px 16px;
+}
+div.proccess-carousel-item .title{
+padding-top: 12px;
+}
+div.proccess-carousel-item .text{
+    padding-top: 12px;
+}

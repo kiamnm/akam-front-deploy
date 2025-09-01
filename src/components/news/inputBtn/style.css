@@ -1,0 +1,44 @@
+.news-inputbtn-container{
+    width:100%;
+    gap: 16px;
+}
+.news-inputbtn-container div.input{
+width: 80%;
+
+
+}
+.news-inputbtn-container button{
+    height: 40px;
+    padding: 0px 8px;
+    width: 20%;
+    border-radius: 4px;
+    transition: 0.3s;
+}
+@media screen and (max-width:992px) {
+    .news-inputbtn-container div.input{
+width: 100%;
+}
+.news-inputbtn-container button{
+    width: 100%;
+}
+}
+.news-inputbtn-container button:hover{
+    background-color: #48484D;
+}
+.news-inputbtn-container button:active{
+   background-color: #707070;
+}
+.news-inputbtn-container div.input input{
+    width: 100%;
+    height: 40px;
+background-color: #EDEDED;
+border-radius: 6px;
+font-size: 14px;
+ padding: 0px 8px;
+font-family: "anjomanLight";
+border: 1px solid #B3B3B3;
+}
+.news-inputbtn-container div.input input:focus {
+   border: 1px solid #6e6e6e;
+    outline: none; 
+}

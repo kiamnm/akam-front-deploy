@@ -1,0 +1,59 @@
+div.upload-box-container{
+    width: 864px;
+    margin: auto;
+    height: 160px;
+    background-color: rgba(237, 237, 237, 0.3);
+    border-radius: 8px;
+    border: 2px dashed #B3B3B3;
+}
+div.upload-box-container div.upload-icon-container{
+gap: 16px;
+}
+@media screen and (max-width:900px) {
+    div.upload-box-container div.upload-icon-container{
+gap: 8px;
+}
+    div.upload-box-container{
+            max-width: 100%;
+            padding: 32px 16px;
+            height: 200px;
+            margin-top: 32px;
+    }  
+    
+    
+}
+
+
+
+
+
+
+
+
+div.drap-drop .dot {
+  display: inline-block;
+  animation: pulse 1.5s infinite ease-in-out;
+}
+
+div.drap-drop .dot1 {
+  animation-delay: 0s;
+}
+
+div.drap-drop .dot2 {
+  animation-delay: 0.2s;
+}
+
+div.drap-drop .dot3 {
+  animation-delay: 0.4s;
+}
+
+@keyframes pulse {
+  0%, 80%, 100% {
+    transform: scale(1);
+    opacity: 0.5;
+  }
+  40% {
+    transform: scale(1.5);
+    opacity: 1;
+  }
+}

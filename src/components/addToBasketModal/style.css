@@ -1,0 +1,60 @@
+div.add-to-basket-modal-container{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    right: 0;
+
+  
+}
+div.add-to-basket-modal-container div.layout{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    z-index: 19;
+    
+}
+div.add-to-basket-modal-container div.modal-container{
+    position: absolute;
+    z-index: 20;
+width: 304px;
+
+background-color: white;
+border-radius: 8px;
+padding: 16px;
+animation: slideDownFade 0.4s ease-out;
+}
+div.add-to-basket-modal-container div.succes-icon{
+   padding-bottom: 8px;
+}
+div.add-to-basket-modal-container div.modal-container button.basket{
+    background-color:#FF5050 ;
+    border-radius: 4px;
+    color: white;
+}
+div.add-to-basket-modal-container div.modal-container button.add-more{
+    background-color: gray;
+     border-radius: 4px;
+     color: white;
+}
+div.add-to-basket-modal-container .button-container{
+    padding-top: 16px;
+    gap: 16px;
+}
+div.add-to-basket-modal-container .button-container button{
+    padding:8px 16px ;
+}
+
+
+@keyframes slideDownFade {
+  0% {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

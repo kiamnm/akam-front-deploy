@@ -1,0 +1,69 @@
+div.comment-form-container{
+   border-radius: 8px;
+box-shadow: 2px 4px 8px rgba(145, 145, 145, 0.2);
+}
+
+div.comment-form-container span.author-icon{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color:#D9D9D9 ;
+
+}
+
+
+div.comment-form-container input.comment{
+    
+    height: 40px;
+    background-color: #EDEDED;
+    border-radius: 4px;
+    
+    padding: 0px 8px;
+    font-family: "anjomanNumRegular";
+    border: 1px solid #B3B3B3;
+}
+
+div.comment-form-container input.comment:focus {
+    border: 1px solid #7c7c7c;
+    outline: none; /* اختیاری: برای حذف حاشیه پیش‌فرض مرورگر */
+}
+
+
+
+
+
+
+div.comment-form-container textarea{
+    width: 100%;
+    height: 160px;
+    background-color: #EDEDED;
+padding: 8px 8px;
+    border-radius: 4px;
+    font-family: "anjomanNumRegular";
+    border: 1px solid #B3B3B3;
+}
+div.comment-form-container textarea:focus {
+     border: 1px solid #7c7c7c;
+    outline: none; /* اختیاری: برای حذف حاشیه پیش‌فرض مرورگر */
+}
+div.comment-form-container   .btn{
+    background-color: #ff5050;
+    color: white;
+   border-radius: 4px; 
+   transition: 0.3s ease;
+   width: 128px;
+   height: 36px;
+}
+
+div.comment-form-container   .btn:hover{
+   background-color: rgb(90, 90, 90);
+}
+
+@media screen and (max-width:768px){
+    div.comment-form-container   .btn{
+        width: 100%;
+    }
+}

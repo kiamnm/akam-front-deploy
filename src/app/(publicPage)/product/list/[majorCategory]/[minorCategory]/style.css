@@ -1,0 +1,5 @@
+div.product-list-page-container, div.empty-product-list-page-container{
+    position: relative;
+    z-index: 1;
+    min-height: calc(100vh - 136px);
+}

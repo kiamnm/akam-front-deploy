@@ -1,0 +1,30 @@
+div.contact-info-container{
+    width: 40%;
+    text-align: justify;
+}
+
+div.contact-info-container div.items-container{
+    gap: 10px;
+}
+div.contact-info-container div.items-container div{
+    border-radius: 6px;
+}
+div.contact-info-container div.socials-container{
+    flex-grow:1;
+    gap: 6px;
+}
+
+
+
+
+
+
+@media  screen and (max-width:768px) {
+    div.contact-info-container{
+        width: 100%;
+        
+    }
+    div.contact-info-container div.items-container{
+        gap: 20px;
+    }
+}

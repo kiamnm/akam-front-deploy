@@ -1,0 +1,32 @@
+div.change-general-info div.input-container{
+    width: 48%;
+}
+div.change-general-info div.input-container  input{
+    width: 100%;
+    height: 40px;
+    background-color: #EDEDED;
+    border-radius: 6px;
+    font-size: 16px;
+    margin-top: 12px;
+    padding: 0px 16px;
+    
+    border: 1px solid #B3B3B3;
+}
+div.change-general-info div.input-container input:focus {
+    border: 1px solid #414141;
+    outline: none; /* اختیاری: برای حذف حاشیه پیش‌فرض مرورگر */
+}
+button.edit-profile{
+    transition: 0.3s ease;
+}
+
+button.edit-profile:hover{
+background-color: rgb(88, 88, 88);
+}
+
+
+@media screen and (max-width:992px) {
+    div.change-general-info div.input-container{
+        width: 100%;
+    }
+}

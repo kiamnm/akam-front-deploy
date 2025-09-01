@@ -16,10 +16,12 @@ div.mobile-side-container{
     top: 0;
     z-index: 5;
     width: 70%;
-    height: 100vh;
+    height: 100dvh;
     overflow: scroll;
     background-color: #48484D;
     transition: transform 0.6s ease-in-out;
+   
+    
 }
 div.mobile-side-container.open{
     transform: translateX(0);  

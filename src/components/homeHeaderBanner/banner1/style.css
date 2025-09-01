@@ -1,0 +1,59 @@
+div.banner1-container{
+    width: 100%;
+    height: 400px;
+    background-image: url("/images/test-banner-1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 16px;
+}
+div.banner1-container h2{
+    background-color: whitesmoke;
+    border-radius: 32px;
+    border: 4px solid black;
+    
+}
+div.banner1-container div.content div.test2{
+    border: 2px solid black;
+    font-size: 24px;
+}
+div.banner1-container div.content button{
+    background-color: whitesmoke;
+    border: 4px solid black;
+    font-size: 18px;
+    
+}
+div.banner1-container div.content span{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+}
+
+
+@media screen and (max-width:768px){
+    div.banner1-container{
+    
+    height: 250px;
+    
+}
+div.banner1-container h2{
+    font-size: 18px;
+}
+
+div.banner1-container div.content span{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: none;
+}
+div.banner1-container div.content div.test2{
+    font-size: 16px;
+}
+div.banner1-container div.content button{
+    background-color: whitesmoke;
+    border: 4px solid black;
+    font-size: 14px;
+    
+}
+}

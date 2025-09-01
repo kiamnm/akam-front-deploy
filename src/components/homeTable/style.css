@@ -1,0 +1,55 @@
+.home-table-wrapper h2{
+  margin-bottom: 24px;
+}
+.home-table .menu-container{
+    gap: 16px;
+    margin-bottom: 16px;
+    overflow-x: auto;
+  white-space: nowrap;
+  flex-wrap: nowrap;
+   scrollbar-width: none; /* برای فایرفاکس */
+  -ms-overflow-style: none;
+  scroll-behavior: smooth;
+  scrollbar-width: thin;
+}
+.home-table .menu-container::-webkit-scrollbar {
+  display: none; 
+    height: 6px;
+  }
+.home-table .menu-container::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+  }
+.home-table .menu-container .item-container{
+    padding: 8px 16px;
+    gap: 4px;
+    border-radius: 8px;
+    
+    transition: 0.3s;
+}
+.home-table .menu-container .item-container.not-active{
+    
+    
+    border-radius: 6px;
+    background-color: rgb(56, 56, 56);
+    transition: 0.3s;
+}
+.home-table .menu-container .item-container.active{
+  background-color:#FF5050 ;
+}
+.home-table .menu-container .item-container.active:hover{
+  background-color:#FF5050 ;
+}
+.home-table .menu-container .item-container.not-active:hover{
+    
+    
+    background-color: #686868;
+}
+
+@media screen and (max-width:992px) {
+    .home-table .menu-container{
+        gap: 10px;
+        
+    }
+}
+

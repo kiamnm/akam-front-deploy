@@ -1,0 +1,44 @@
+div.contact-form-container input{
+    width: 100%;
+    height: 40px;
+    background-color: #EDEDED;
+    border-radius: 6px;
+    
+    padding: 0px 12px;
+    font-family: "anjomanRegular";
+    border: 1px solid #B3B3B3;
+    font-size: 14px;
+}
+
+
+div.contact-form-container input:focus {
+    border: 1px solid #414141;
+    outline: none; /* اختیاری: برای حذف حاشیه پیش‌فرض مرورگر */
+}
+div.contact-form-container textarea{
+    width: 100%;
+    height: 100px;
+    background-color: #EDEDED;
+    border-radius: 6px;
+    
+    padding: 10px 12px;
+    font-family: "anjomanRegular";
+    border: 1px solid #B3B3B3; 
+    font-size: 14px;
+}
+div.contact-form-container textarea:focus {
+    border: 1px solid #414141;
+    outline: none; /* اختیاری: برای حذف حاشیه پیش‌فرض مرورگر */
+}
+div.contact-form-container button{
+    border-radius: 6px;
+    transition: 0.3s ease ;
+}
+div.contact-form-container button:disabled{
+    background-color: #48484D;
+}
+div.contact-form-container button:hover{
+    border-radius: 6px;
+    
+    background-color: #48484D;
+}

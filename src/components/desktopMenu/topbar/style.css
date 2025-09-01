@@ -1,3 +1,24 @@
 div.topbar-container{
-    height:  84px;
+    height:  72px;
+}
+div.topbar-container div.right img{
+    width: 48px;
+    height: 48px;
+}
+div.topbar-container div.right .logo-text-container{
+    gap: 4px;
+}
+div.topbar-container div.left{
+    gap: 8px;
+}
+
+@media screen and (max-width:768px) {
+    div.topbar-container div.right img{
+    width: 40px;
+    height: 40px;
+}
+div.topbar-container div.right .logo-text-container{
+    gap: 0px;
+}
+
 }

@@ -1,0 +1,56 @@
+
+div.dynamic-inputs-container div.inputs-container{
+    gap: 64px;
+    margin-bottom: 28px;
+    
+}
+
+div.dynamic-inputs-container div.item-container{
+    width: 400px;
+}
+
+div.dynamic-inputs-container label{
+    padding-bottom: 8px;
+}
+
+
+
+
+
+
+div.dynamic-inputs-container  .remove-product{
+    margin-top: 24px;
+}
+div.dynamic-inputs-container .add-product {
+    gap: 8px;
+     max-width: 80%;
+     
+            margin: 24px auto 24px auto;
+}
+div.dynamic-inputs-container .add-product span{
+    background-color: #177915;
+   border-radius: 2px;
+    padding: 2px 2px;
+    cursor: pointer;
+    }
+    div.dynamic-inputs-container .remove-product span{
+    background-color: red;
+   border-radius: 2px;
+    padding: 2px 2px;
+    cursor: pointer;
+    }
+    
+        
+        @media screen and (max-width:960px){
+            div.dynamic-inputs-container div.inputs-container{
+                gap: 16px;
+            }
+            .dynamic-inputs-container div.add-product{
+                max-width: 100%;
+                 margin: 24px auto 32px auto;
+            }
+            div.dynamic-inputs-container div.item-container{
+    width: 100%;
+}
+            
+        }
