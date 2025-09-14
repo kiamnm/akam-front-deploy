@@ -1,0 +1,18 @@
+div.step-page-container.step2 div.img-container img {
+    width: 40px;
+    height: 40px;
+}
+div.step-page-container.step2 input{
+    height: 36px;
+}
+div.step-page-container.step2 input:focus{
+    outline: none;
+    border: 1px solid rgba(0, 0, 0, 0.432);
+}
+div.step-page-container.step2  textarea{
+    min-height: 100px;
+}
+div.step-page-container.step2  textarea:focus{
+    outline: none;
+    border: 1px solid rgba(0, 0, 0, 0.363);
+}

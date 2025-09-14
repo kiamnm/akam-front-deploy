@@ -33,7 +33,7 @@ div.desktop-navbar-container div.right .navbar-item:hover{
 }
 div.desktop-navbar-container div.sub-menu{
     position: relative;
-    z-index: 4;
+    z-index: 6;
     right: 0;
     top: 64px;
     padding: 0px;

@@ -16,12 +16,14 @@ import { IoIosArrowDown } from "react-icons/io";
 import { IoPricetag } from "react-icons/io5";
 import { FaBox } from "react-icons/fa6";
 import { FaMoneyBill } from "react-icons/fa";
-
+import convertToShamsi from "@/utils/convertToShamsi";
+import { AuthContext } from "@/context/AuthContext";
 
 export default function OrderTable() {
   const tableRef = useRef();
   const [height, setHeight] = useState(0);
   const [openMobileCartIndex, setOpenMobileCartIndex] = useState(null);
+  const {user}=useContext(AuthContext)
 
   const {
     activeOrders,
@@ -82,6 +84,7 @@ export default function OrderTable() {
           {activeOrders
             .slice((activePage - 1) * dataPerPage, activePage * dataPerPage)
             .map((order, index) => {
+              console.log(user);
               const phase = getOrderPhaseUi(order.phase);
               return (
                 <tr key={index}>
@@ -89,13 +92,13 @@ export default function OrderTable() {
                     {(activePage - 1) * dataPerPage + index + 1}
                   </td>
                   <td className="fs_12 align-middle">
-                    {order.orderIdentifier}
+                    {order.identifier}
                   </td>
                   <td className="anjoman_num_regular fs_12 align-middle">
-                    {order.date}
+                    {convertToShamsi(order.createdAt).shamsiDate}
                   </td>
                   <td className="anjoman_num_regular fs_12 align-middle">
-                    {order.clock}
+                    {convertToShamsi(order.createdAt).shamsiTime}
                   </td>
                   <td className="anjoman_num_regular align-middle">
                     {order.type !== 2 && order.items.length}
@@ -133,7 +136,7 @@ export default function OrderTable() {
                   </td>
                   <td className="align-middle">
                     <Link
-                      href={`/orders/${order.objId}`}
+                      href={`/order/step${order.phase}?userId=${user?._id}&orderId=${order._id}`}
                       className="color_black fs_18 cursor_pointer ps-3"
                     >
                       <Tooltip
@@ -220,11 +223,11 @@ export default function OrderTable() {
           </div>
           <div className="time-container d-flex align-items-center gap-1 ">
             <p className="anjoman_num_regular fs_14 d-flex align-items-center m-0">
-              {order.clock}
+              {convertToShamsi(order.createdAt).shamsiTime}
             </p>
             -
             <p className="anjoman_num_regular fs_14 d-flex align-items-center m-0">
-              {order.date}
+              {convertToShamsi(order.createdAt).shamsiDate}
             </p>
           </div>
           <span className="d-flex cursor_pointer">
@@ -253,7 +256,7 @@ export default function OrderTable() {
                   کد سفارش
                 </span>
               </div>
-              <p className="p-0 anjoman_num_regular fs_14 m-0">{order.orderIdentifier}</p>
+              <p className="p-0 anjoman_num_regular fs_14 m-0">{order.identifier}</p>
             </div>
 
             <div className="order-count-container d-flex justify-content-between align-items-center mb-2">

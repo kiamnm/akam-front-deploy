@@ -1,0 +1,69 @@
+.order-page .wizard-stepper-container {
+  width: auto; 
+  height: 76px;
+  overflow-x: scroll; /* یا auto اگر فقط وقتی لازم شد بخوره */
+  overflow-y: hidden; /* فقط افقی بخوره */
+  
+  /* مخفی کردن نوار اسکرول */
+  scrollbar-width: none;   /* Firefox */
+  -ms-overflow-style: none; /* IE & Edge قدیمی */
+}
+
+.order-page .wizard-stepper-container::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
+}
+
+.line-container {
+  flex: 0 0 auto;
+  height: 4px;
+  width: max(calc((100% - ((2 * 60px) + (7 * 64px))) / 6), 60px);
+  background-color: #ededed;
+  z-index: 1;
+}
+div.line-container.first, div.line-container.last{
+    width: 60px;
+}
+
+div.circle-container{
+    flex: 0 0 auto; /* جلوگیری از کوچک شدن در عرض کم */
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  border: 4px solid #E2E2E2;
+  z-index: 2;
+}
+
+.line-active{
+  background-color: #FF5050;
+}
+.wizard-active{
+border: 3px solid #FF5050!important;
+  outline: 4px solid #ff50503b;
+}
+.wizard-done{
+border: 3px solid #FF5050!important;
+background-color:#FF5050 ;
+}
+@media screen and (max-width:992px) {
+    div.line-container.first, div.line-container.last{
+    width: 40px;
+}
+div.circle-container{
+    flex: 0 0 auto; /* جلوگیری از کوچک شدن در عرض کم */
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 2px solid #FF5050;
+  outline: 4px solid #ff50503b;
+  z-index: 2;
+}
+
+.line-container {
+  flex: 0 0 auto;
+  height: 3px;
+  width: max(calc((100% - ((2 * 60px) + (7 * 64px))) / 6), 50px);
+  background-color: #ededed;
+  z-index: 1;
+}
+
+}

@@ -1,0 +1,22 @@
+div.step-page-container.step1 .file-detail-container{
+    
+    height: 44px;
+    margin: auto;
+    background-color:#EDEDED ;
+    border-radius: 6px;
+    border: 1px solid #557254;
+    padding: 0px 8px;
+}
+div.step-page-container.step1 div.file-detail-container div.right{
+    gap: 12px;
+}
+div.step-page-container.step1 div.file-detail-container div.left{
+    gap: 8px;
+}
+
+@media screen and (max-width:900px){
+    div.step-page-container.step1 .file-detail-container{
+        max-width: 100%;
+        margin: auto;
+    }
+}

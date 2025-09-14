@@ -1,0 +1,21 @@
+div.promodal-container{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 10;
+}
+div.promodal-container div.overlay{
+    width: 100%;
+    height: 100vh;
+   
+    position: absolute;
+    top: 0;
+    backdrop-filter: blur(2px); /* این خط باعث blur شدن صفحه می‌شود */
+  background-color: rgba(0,0,0,0.3);
+}
+div.promodal-container div.modal-content-container {
+    position: relative;
+    max-width: 480px;
+}

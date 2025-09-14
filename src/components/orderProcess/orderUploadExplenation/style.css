@@ -1,0 +1,13 @@
+.order-upload-explenation textarea{
+    width: 100%;
+    border: 1px solid rgb(206, 206, 206);
+    min-height: 100px;
+    background-color:#EDEDED ;
+}
+.order-upload-explenation textarea:focus{
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.411);
+    outline: none;
+    min-height: 100px;
+    background-color:#EDEDED ;
+}

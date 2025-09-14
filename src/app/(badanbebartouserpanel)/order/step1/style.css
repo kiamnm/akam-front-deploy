@@ -1,0 +1,10 @@
+   div.step-page-container{
+min-height: calc(100dvh - 168px)
+}
+
+@media screen and (max-width:768px) {
+ 
+div.step-page-container{
+min-height: calc(100dvh - 96px)
+}
+}

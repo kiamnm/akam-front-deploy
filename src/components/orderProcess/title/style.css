@@ -1,0 +1,8 @@
+.order-page .header-container div.phase-status-container {
+    max-width: 160px;
+}
+.order-page .header-container div.cansle-button{
+    background-color: #F8D7DA;
+    color: #DC3545;
+    border: 1px solid #DC3545;
+}

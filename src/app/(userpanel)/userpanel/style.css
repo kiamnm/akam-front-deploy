@@ -1,0 +1,31 @@
+div.user-panel-page{
+    min-height: 100dvh;
+    
+}
+
+div.user-panel-layout{
+    min-height: 100%;
+    
+}
+div.user-panel-content{
+    
+    overflow: hidden;
+    height: 100%;
+    
+    
+    
+}
+
+div.user-panel-page  div.overlay.side-menu{
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 4;
+    width: 100vw;
+
+    min-height: calc(100dvh );
+    background-color: rgba(5, 5, 5, 0.068);
+    backdrop-filter: blur(2px); 
+  -webkit-backdrop-filter: blur(2px);
+
+}

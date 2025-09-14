@@ -305,6 +305,9 @@ font-family: 'anjomanMedium';
   .bg_color_dark{
     background-color: #48484D;
   }
+  .bg_color_light_gray{
+    background-color: #EDEDED;
+  }
   .cursor_pointer{
     cursor: pointer;
   }
@@ -332,4 +335,47 @@ div.Toastify__toast-icon{
   margin-right: 20px!important;
   
  
+}
+
+
+
+
+
+.phase-1-status-ui {
+  background-color: #fff3cd;
+  color: #856404;
+  border: 1px solid #FFC107;
+}
+.phase-2-status-ui {
+  background-color: #fff3cd;
+  color: #856404;
+}
+.phase-4-status-ui {
+  background-color: #fff3cd;
+  color: #856404;
+}
+.phase-5-status-ui {
+  background-color: #fff3cd;
+  color: #856404;
+}
+.phase-6-status-ui {
+  background-color: #fff3cd;
+  color: #856404;
+}
+.phase-7-status-ui {
+  background-color: #D4EDDA;
+  color: #155724;
+}
+.phase-3-status-ui {
+  background-color: #fff3cd;
+  color: #856404;
+}
+
+.phase-8-status-ui {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+.phase-9-status-ui {
+  background-color: #f8d7da;
+  color: #721c24;
 }

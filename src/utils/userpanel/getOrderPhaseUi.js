@@ -12,65 +12,65 @@ import { RxCrossCircled } from "react-icons/rx";
 
 const getOrderPhaseUi = (phase) => {
     switch (phase) {
-      case 1:
+      case "1":
         return {
           text: "در انتظار تایید کاربر",
-          className: "phase-1",
-          icon: <LuClock10 style={{ fontSize: "20px" }} />,
+          className: "phase-1-status-ui",
+          icon: <LuClock10 style={{ fontSize: "18px" }} />,
         };
-      case 2:
+      case "2":
         return {
           text: "در انتظار تایید کاربر",
-          className: "phase-2",
-          icon: <LuClock10    style={{ fontSize: "20px" }} />,
+          className: "phase-2-status-ui",
+          icon: <LuClock10    style={{ fontSize: "18px" }} />,
         };
-      case 3:
+      case "3":
         return {
           text: "در انتظار بررسی کارشناس",
-          className: "phase-3",
-          icon: <LuClock10    style={{ fontSize: "20px" }} />,
+          className: "phase-3-status-ui",
+          icon: <LuClock10    style={{ fontSize: "18px" }} />,
         };
-      case 4:
+      case "4":
         return {
           text: "در انتظار تایید کاربر",
-          className: "phase-4",
+          className: "phase-4-status-ui",
 
-          icon: <LuClock10     style={{ fontSize: "20px" }} />,
+          icon: <LuClock10     style={{ fontSize: "18px" }} />,
         };
-      case 5:
+      case "5":
         return {
           text: "در انتظار پرداخت",
-          className: "phase-5",
+          className: "phase-5-status-ui",
 
-          icon: <LuClock10    style={{ fontSize: "20px" }} />,
+          icon: <LuClock10    style={{ fontSize: "18px" }} />,
         };
-        case 6:
+        case "6":
         return {
           text: "در انتظار بررسی کارشناس",
-          className: "phase-6",
+          className: "phase-6-status-ui",
 
-          icon: <LuClock10    style={{ fontSize: "20px" }} />,
+          icon: <LuClock10    style={{ fontSize: "18px" }} />,
         };
-        case 7:
+        case "7":
         return {
           text: "خرید موفق",
-          className: "phase-7",
+          className: "phase-7-status-ui",
 
-          icon: <IoCheckmarkDoneCircleOutline style={{ fontSize: "20px" }} />,
+          icon: <IoCheckmarkDoneCircleOutline style={{ fontSize: "18px" }} />,
         };
-        case 8:
+        case "8":
         return {
           text: "لغو سفارش",
-          className: "phase-8",
+          className: "phase-8-status-ui",
 
-          icon: <RxCrossCircled style={{ fontSize: "20px" }} />,
+          icon: <RxCrossCircled style={{ fontSize: "18px" }} />,
         };
-        case 9:
+        case "9":
         return {
           text: "سفارش منقضی شد",
-          className: "phase-9",
+          className: "phase-9-status-ui",
 
-          icon: <RxCrossCircled    style={{ fontSize: "20px" }} />,
+          icon: <RxCrossCircled    style={{ fontSize: "18px" }} />,
         };
       default:
         return { text: "نامشخص", className: "bg-secondary" };
@@ -78,3 +78,52 @@ const getOrderPhaseUi = (phase) => {
   }
 
 export default getOrderPhaseUi;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

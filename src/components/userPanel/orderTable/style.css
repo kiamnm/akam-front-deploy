@@ -20,43 +20,7 @@ div.order-table-container .table{
 div.order-table-container .desktop-table-container{
   height: 100%;
 }
-div.order-table-container .phase-1 {
-  background-color: #fff3cd;
-  color: #856404;
-}
-div.order-table-container .phase-2 {
-  background-color: #fff3cd;
-  color: #856404;
-}
-div.order-table-container .phase-4 {
-  background-color: #fff3cd;
-  color: #856404;
-}
-div.order-table-container .phase-5 {
-  background-color: #fff3cd;
-  color: #856404;
-}
-div.order-table-container .phase-6 {
-  background-color: #fff3cd;
-  color: #856404;
-}
-div.order-table-container .phase-7 {
-  background-color: #D4EDDA;
-  color: #155724;
-}
-div.order-table-container .phase-3 {
-  background-color: #fff3cd;
-  color: #856404;
-}
 
-div.order-table-container .phase-8 {
-  background-color: #f8d7da;
-  color: #721c24;
-}
-div.order-table-container .phase-9 {
-  background-color: #f8d7da;
-  color: #721c24;
-}
 
 thead{
     height: 48px;

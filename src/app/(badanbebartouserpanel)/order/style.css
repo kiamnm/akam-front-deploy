@@ -1,0 +1,28 @@
+div.order-page{
+    min-height: 100dvh;
+    
+}
+   div.step-page-container{
+min-height: calc(100dvh - 168px)
+}
+
+@media screen and (max-width:768px) {
+ 
+div.step-page-container{
+min-height: calc(100dvh - 96px)
+}
+}
+
+/* div.order-content-layout{
+    min-height: 500px
+    
+} */
+/* div.order-content-layoutt{
+    
+    overflow: hidden;
+    height: 100%;
+    
+    
+    
+}
+ */

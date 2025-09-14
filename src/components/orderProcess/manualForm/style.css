@@ -1,0 +1,38 @@
+
+div.step-page-container.step1 div.manual-form-container div.title-container div:nth-child(1){
+width: 64px;
+
+
+}
+div.step-page-container.step1 div.manual-form-container div.title-container div.empty{
+width: 64px;
+
+
+}
+div.step-page-container.step1 div.manual-form-container div.title-container{
+    
+    border-bottom: 1px solid rgb(221, 221, 221);
+}
+div.step-page-container.step1 div.manual-form-container div.input-row-container div.number{
+width: 64px;
+}
+div.step-page-container.step1 div.manual-form-container div.input-row-container div.cansel{
+width: 64px;
+text-align: end;
+}
+div.step-page-container.step1 div.manual-form-container input{
+    height: 40px;
+}
+div.step-page-container.step1 div.manual-form-container input:focus{
+    outline: none;
+    border: 1px solid rgba(0, 0, 0, 0.281);
+}
+div.empty-btn{
+    width: 64px;
+    
+}
+div.add-btn-icon{
+    background-color:#28A745 ;
+    width: 20px;
+    height: 20px;
+}
