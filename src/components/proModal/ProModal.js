@@ -51,16 +51,16 @@ export default function ProModal({
           </div>
         )}
 
-        <div className="text-container fs_14 anjoman_regular color_text text_justify mt-3">
+        <div className="text-container fs_14 anjoman_regular color_text text_justify mt-3 text-center">
           {text}
         </div>
         {firstBtnText && secondBtnText && (
-          <div className="btn-container d-flex justify-content-between mt-3">
+          <div className="btn-container d-flex justify-content-between mt-3 ">
             <div
               onClick={() => {
                 clickFirstBtn();
               }}
-              className="first-btn fs_14 anjoman_regular rounded-1 color_white px-3 py-1 bg_color_orange cursor_pointer"
+              className="first-btn fs_14 anjoman_regular rounded-1 color_white px-3 py-1 bg_color_orange cursor_pointer text-center"
             >
               {pending===true ? (
                   <span
@@ -77,7 +77,7 @@ export default function ProModal({
               onClick={() => {
                 setIsModalShow(false);
               }}
-              className="second-btn fs_14 anjoman_regular rounded-1 color_black px-3 py-1 bg_color_gray cursor_pointer "
+              className="second-btn fs_14 anjoman_regular rounded-1 color_black px-3 py-1 bg_color_gray cursor_pointer  text-center"
             >
               {secondBtnText}
             </div>

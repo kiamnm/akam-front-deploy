@@ -5,7 +5,7 @@ width: 64px;
 
 }
 div.step-page-container.step1 div.manual-form-container div.title-container div.empty{
-width: 64px;
+width: 48px;
 
 
 }
@@ -17,11 +17,11 @@ div.step-page-container.step1 div.manual-form-container div.input-row-container 
 width: 64px;
 }
 div.step-page-container.step1 div.manual-form-container div.input-row-container div.cansel{
-width: 64px;
+width: 48px;
 text-align: end;
 }
 div.step-page-container.step1 div.manual-form-container input{
-    height: 40px;
+    height: 36px;
 }
 div.step-page-container.step1 div.manual-form-container input:focus{
     outline: none;

@@ -30,8 +30,8 @@ export default function BasketOrderTable() {
     );
   };
   return (
-    <div className="container cart-page-container mt-3 ">
-      <h4 className="mb-2 fs_14 anjoman_medium">لیست محصولات </h4>
+    <div className="container cart-page-container  ">
+
       <div className="table-wrapper">
         <div className="table-responsive">
           <table
@@ -171,14 +171,14 @@ export default function BasketOrderTable() {
         </div>
       </div>
 
-      <div style={{backgroundColor:"#dc354634"}} className="warning-container rounded-1 p-2">
-        <div className="title d-flex gap-2 align-items-center mb-2">
+      <div style={{backgroundColor:"#dc354634"}} className="warning-container rounded-1 px-2 py-3">
+        <div className="title d-flex gap-1 align-items-center mb-2">
           <span className="d-flex justify-content-center align-items-center">
             <IoIosWarning style={{color:"#721C24",fontSize:"22px"}} />
           </span>
-          <p style={{color:"#721C24"}} className="fs_16 anjoman_medium m-0">توجه!</p>
+          <p style={{color:"#721C24"}} className="fs_16 anjoman_medium m-0">توجه !</p>
         </div>
-        <p style={{color:"#721C24"}} className="fs_14 anjoman_regular">
+        <p style={{color:"#721C24"}} className="fs_14 anjoman_regular m-0">
           با توجه به نوسانات بازار و لحظه ای بودن قیمت ها ، پس از تایید کارشناس
           ،پش فاکتور در مراحل بعدی در پنل کاربری شما ارسال میشود .
         </p>

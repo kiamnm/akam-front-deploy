@@ -1,0 +1,16 @@
+div.ticket-status-container .box-shadow{
+box-shadow: 0 2px 8px rgba(131, 131, 131, 0.089);
+}
+div.ticket-status-container .waiting span:nth-child(1){
+background-color: #fff3cd;
+color: #856404;
+}
+
+div.ticket-status-container .success span:nth-child(1){
+    background-color: #D4EDDA;
+color: #155724;
+}
+div.ticket-status-container .finish span:nth-child(1){
+    background-color:#3562dc3b ;
+color: #356adc;
+}

@@ -1,0 +1,42 @@
+div.step-page-container.step7 div.download{
+background-color: #E2E2E2;
+}
+
+
+
+
+
+
+
+
+div.step-page-container.step7 div.transport-container{
+    background-color: #D4EDDA;
+    border: 1px solid #155724;
+    color: #155724;
+    
+}
+
+div.step-page-container.step7 div.bill-container{
+flex-grow: 1;
+
+}
+div.step-page-container.step7 div.tax{
+    border-bottom: 1px solid black;
+}
+
+
+
+
+@media screen and (max-width:768px) {
+    div.step-page-container.step7 div.left{
+        width: 100%;
+    }
+    div.step-page-container.step7 div.download{
+background-color: #E2E2E2;
+width: 48%;
+}
+div.step-page-container.step7 div.print{
+
+width: 48%;
+}
+}

@@ -16,6 +16,7 @@ export const WizardProcessProvider = ({ children }) => {
   const [uploadFormExplenation, setUploadFormExplenation] = useState("");
   const [orderType, setOrderType] = useState("1");
   const [cartItems,setCartItems]=useState([])
+  const [contactExplenation,setContactExplenation]=useState("")
 
   ///gereftane data order dar marhale vorod be step
   useEffect(() => {
@@ -49,7 +50,8 @@ export const WizardProcessProvider = ({ children }) => {
     orderType,
     uploadFormExplenation,
     setUploadFormExplenation,
-    cartItems,setCartItems
+    cartItems,setCartItems,
+    contactExplenation,setContactExplenation
   };
 
   return (

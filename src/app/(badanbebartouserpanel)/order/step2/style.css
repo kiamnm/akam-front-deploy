@@ -4,6 +4,7 @@ div.step-page-container.step2 div.img-container img {
 }
 div.step-page-container.step2 input{
     height: 36px;
+    border:1px solid #B3B3B3 ;
 }
 div.step-page-container.step2 input:focus{
     outline: none;
@@ -11,6 +12,7 @@ div.step-page-container.step2 input:focus{
 }
 div.step-page-container.step2  textarea{
     min-height: 100px;
+    border:1px solid #B3B3B3 ;
 }
 div.step-page-container.step2  textarea:focus{
     outline: none;

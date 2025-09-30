@@ -3,7 +3,7 @@
   z-index: 1;
  }
  .table-wrapper {
-  border-radius: 6px;
+  
   overflow: hidden;
 
   padding: 0;
@@ -31,7 +31,7 @@ table {
  }
  .table input.amount:focus{
   outline: none;
-  border: 1px solid rgb(121, 121, 121);
+  border: 1px solid rgba(121, 121, 121, 0.377);
  }
 div.factor-result-container{
  

@@ -1,0 +1,10 @@
+div.nextPrevious-btn-container div.disable{
+    background-color: #EDEDED;
+    color: #B3B3B3;
+    border: 1px solid #B3B3B3;
+}
+@media screen and (max-width:768px) {
+    div.nextPrevious-btn-container div{
+width: 48%;
+    }
+}

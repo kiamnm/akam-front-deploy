@@ -188,7 +188,7 @@ export const OrderProvider = ({ children }) => {
     // --- فیلتر سرچ ---
     if (searchValue !== "") {
       filteredOrders = filteredOrders.filter((item) =>
-        item.orderIdentifier.toLowerCase().includes(searchValue.toLowerCase())
+        item.identifier.toLowerCase().includes(searchValue.toLowerCase())
       );
     }
 

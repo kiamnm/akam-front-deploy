@@ -1,13 +1,11 @@
 "use client";
-import React, { useContext, useState, useEffect } from "react";
+import React, { useContext, useEffect } from "react";
 import "./style.css";
 import { IoClose, IoAddOutline } from "react-icons/io5";
 import { wizardProcessContext } from "@/context/userPanel/wizardProcess";
 
 export default function ManualForm() {
-  const { order,manualFormItems, setManualFormItems } = useContext(wizardProcessContext);
-
-  const [items, setItems] = useState([]);
+  const { order, manualFormItems, setManualFormItems } = useContext(wizardProcessContext);
 
   // مقدار اولیه از order.items گرفته شود یا یک ردیف خالی ایجاد شود
   useEffect(() => {
@@ -23,7 +21,9 @@ export default function ManualForm() {
   };
 
   const handleRemoveItem = (index) => {
-    if (index === 0) return; // اولین ردیف حذف نشود
+    // اگر فقط یک آیتم باقی مانده باشد، حذف نشود
+    if (manualFormItems.length <= 1) return;
+
     const newItems = manualFormItems.filter((_, i) => i !== index);
     setManualFormItems(newItems);
   };
@@ -37,17 +37,17 @@ export default function ManualForm() {
   return (
     <div className="manual-form-container">
       <div className="title-container d-flex justify-content-between pb-2">
-        <div className="anjoman_regular fs_14 text-center">شماره</div>
-        <div className="flex-grow-1 text-center anjoman_regular fs_14 d-none d-md-block">
+        <div className="anjoman_medium fs_14 text-center">شماره</div>
+        <div className="flex-grow-1 text-center anjoman_medium fs_14 d-none d-md-block">
           نام کالا
         </div>
-        <div className="flex-grow-1 text-center anjoman_regular fs_14 d-none d-md-block">
+        <div className="flex-grow-1 text-center anjoman_medium fs_14 d-none d-md-block">
           تعداد/مقدار
         </div>
         <div className="flex-grow-1 text-center fs_14 anjoman_medium d-block d-md-none">
           لیست آیتم ‌های استعلام
         </div>
-        <div className="empty fs_14 anjoman_regular"></div>
+        <div className="empty fs_14 anjoman_medium  text-start">حذف</div>
       </div>
 
       {manualFormItems.map((item, index) => (
@@ -56,7 +56,7 @@ export default function ManualForm() {
           key={index}
         >
           <div className="number anjoman_num_regular text-center">{index + 1}</div>
-          <div className="inputs-container d-flex flex-column flex-md-row gap-3 flex-grow-1">
+          <div className="inputs-container d-flex flex-column flex-md-row gap-3 flex-grow-1 mb-2">
             <input
               type="text"
               className="flex-grow-1 bg_color_light_gray rounded-2 fs_14 anjoman_regular pe-3"
@@ -72,11 +72,17 @@ export default function ManualForm() {
               onChange={(e) => handleChange(index, "amount", e.target.value)}
             />
           </div>
-          <div className="cansel">
+          <div className="cansel ">
             {manualFormItems.length > 1 && (
               <IoClose
                 style={{ fontSize: "26px", color: "#FF5050", cursor: "pointer" }}
                 onClick={() => handleRemoveItem(index)}
+              />
+            )}
+            {manualFormItems.length === 1 && (
+              <IoClose
+                style={{ fontSize: "26px", color: "#b8b8b8ff",  }}
+              
               />
             )}
           </div>

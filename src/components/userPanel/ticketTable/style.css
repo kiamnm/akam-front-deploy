@@ -1,0 +1,72 @@
+div.ticket-table-container {
+  box-shadow: 0 4px 8px rgba(131, 131, 131, 0.212);
+  height: 100%;
+  background-color: white;
+}
+div.ticket-table-container th {
+  font-weight: 500;
+  color: #4b4b4b;
+}
+div.ticket-table-container td {
+  color: #4b4b4b;
+}
+div.ticket-table-container div.phase {
+  width: 180px !important;
+}
+
+div.ticket-table-container .table {
+  height: 100%;
+}
+div.ticket-table-container .desktop-table-container {
+  height: 100%;
+}
+
+thead {
+  height: 48px;
+}
+.ticket-table-container table td {
+  height: calc(100% / 6); /* یا هر ارتفاعی که ردیف‌هات دارن */
+}
+div.button-container :nth-child(1) {
+  flex-grow: 3;
+  padding: 6px 0px;
+}
+div.button-container :nth-child(2) {
+  flex-grow: 1;
+  padding: 6px 0px;
+}
+@media screen and (max-width: 992px) {
+  div.ticket-table-container {
+    box-shadow: none;
+    background-color: #ededed;
+    height: auto;
+
+    border-radius: 0 !important;
+  }
+  div.mobile-order-container {
+    width: 100%;
+  }
+  
+}
+
+div.ticket-table-container div.status-container {
+  width: 120px;
+}
+div.ticket-table-container div.status-container.review {
+  background-color: #fff3cd;
+  color: #856404;
+}
+div.ticket-table-container div.status-container.answered {
+  color: #155724;
+  background-color: #d4edda;
+}
+div.ticket-table-container div.status-container.closed {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+/* @media screen and (max-width:768px) {
+  div.ticket-table-container {
+  
+  height: auto;
+}
+} */

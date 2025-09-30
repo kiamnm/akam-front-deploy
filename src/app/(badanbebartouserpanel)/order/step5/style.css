@@ -1,0 +1,34 @@
+div.step-page-container.step5 .green-container{
+    background-color: #D4EDDA;
+    border: 1px solid #155724;
+    color: #155724;
+    min-width: 400px;
+}
+
+div.step-page-container.step5 div.tip-container  div.red-tip-container{
+    background-color: #F8D7DA;
+    color: #721C24;
+}
+div.bank-tab-container div.not-active{
+background-color: #EDEDED4D;
+}
+div.bank-tab-container div.active{
+    background-color:#EDEDED;
+}
+div.bank-tab-container div.melat-tab img.bank-icon{
+    width: 24px;
+    height: 24px;
+}
+div.bank-tab-container div.saderat-tab img.bank-icon{
+    width: 28px;
+    height: 28px;
+}
+.cart-bank-test{
+    width: 700px;
+    height: 280px;
+}
+div.green-tip{
+    background-color: #D4EDDA;
+    color: #155724;
+    border: 1px solid #28A745;
+}

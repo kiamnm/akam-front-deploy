@@ -1,0 +1,50 @@
+div.tickets-action-container {
+    min-height: 36px;
+}
+
+div.tickets-action-container  div.input-container{
+    box-shadow:  2px 2px 4px rgba(107, 107, 107, 0.103);
+}
+div.tickets-action-container  .item.button{
+    box-shadow:  2px 2px 4px rgba(107, 107, 107, 0.103);
+}
+div.tickets-action-container  .sort-container, div.tickets-action-container  .filter{
+    box-shadow:  2px 2px 4px rgba(122, 21, 21, 0.103);
+}
+div.tickets-action-container  div, div.tickets-action-container  .item{
+    height: 100%;
+    
+}
+div.tickets-action-container  input{
+    height: 100%;
+}
+div.tickets-action-container  input:focus{
+    outline: none;
+    border: 1px solid rgb(158, 158, 158);
+}
+div.tickets-action-container  span.search-icon{
+right: 10px;
+bottom: 2.5px;
+}
+div.tickets-action-container  div.sort-filter-detaill{
+    
+    height: auto;
+display: none;
+box-shadow:  4px 4px 2px rgba(107, 107, 107, 0.103);;
+    left: 0;
+    top:44px;
+    border: 1px solid #FF5050;
+}
+div.tickets-action-container  div.sort-filter-detaill.open{
+display: flex;
+}
+
+@media screen and  (max-width:992px) {
+    div.tickets-action-container {
+    height: 44px;
+}
+div.tickets-action-container  span.search-icon{
+right: 10px;
+bottom: 8px;
+}
+}

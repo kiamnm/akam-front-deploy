@@ -1,0 +1,48 @@
+/* خط زیر عنوان */
+.ticket-sort-container p.title {
+  border-bottom: 1px solid black;
+}
+
+/* مخفی کردن رادیوی پیش‌فرض */
+.ticket-sort-container  input[type="radio"] {
+  display: none;
+}
+
+/* کانتینر هر گزینه */
+.ticket-sort-container  .radio-container {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 8px;
+  cursor: pointer;
+  user-select: none;
+  flex-direction: row-reverse;  /* 🔥 ترتیب رو برعکس می‌کنه */
+}
+
+/* دایره کاستوم */
+.ticket-sort-container  .radio-circle {
+  width: 16px;
+  height: 16px;
+  border: 1px solid gray;
+  border-radius: 50%;
+  position: relative;
+  transition: all 0.2s ease;
+}
+
+/* وقتی انتخاب شد → تغییر رنگ border */
+.ticket-sort-container  input[type="radio"]:checked + .radio-circle {
+  border-color: #FF5050;
+}
+
+/* نقطه وسط وقتی انتخاب شد */
+.ticket-sort-container  input[type="radio"]:checked + .radio-circle::after {
+  content: "";
+  width: 8px;
+  height: 8px;
+  background: #FF5050;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

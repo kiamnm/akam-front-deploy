@@ -5,6 +5,11 @@
 import { LuClock10 } from "react-icons/lu";
 import { IoCheckmarkDoneCircleOutline } from "react-icons/io5";
 import { RxCrossCircled } from "react-icons/rx";
+import { FaRegCircleCheck } from "react-icons/fa6";
+
+import { BsExclamationCircle } from "react-icons/bs";
+
+
 
 
 
@@ -16,13 +21,13 @@ const getOrderPhaseUi = (phase) => {
         return {
           text: "در انتظار تایید کاربر",
           className: "phase-1-status-ui",
-          icon: <LuClock10 style={{ fontSize: "18px" }} />,
+          icon: <BsExclamationCircle  style={{ fontSize: "18px",strokeWidth: 0.3 }} />,
         };
       case "2":
         return {
           text: "در انتظار تایید کاربر",
           className: "phase-2-status-ui",
-          icon: <LuClock10    style={{ fontSize: "18px" }} />,
+          icon: <BsExclamationCircle  style={{ fontSize: "18px" }} />,
         };
       case "3":
         return {
@@ -35,14 +40,14 @@ const getOrderPhaseUi = (phase) => {
           text: "در انتظار تایید کاربر",
           className: "phase-4-status-ui",
 
-          icon: <LuClock10     style={{ fontSize: "18px" }} />,
+          icon: <BsExclamationCircle  style={{ fontSize: "18px" }} />,
         };
       case "5":
         return {
           text: "در انتظار پرداخت",
           className: "phase-5-status-ui",
 
-          icon: <LuClock10    style={{ fontSize: "18px" }} />,
+          icon: <BsExclamationCircle  style={{ fontSize: "18px" }} />,
         };
         case "6":
         return {
@@ -56,7 +61,7 @@ const getOrderPhaseUi = (phase) => {
           text: "خرید موفق",
           className: "phase-7-status-ui",
 
-          icon: <IoCheckmarkDoneCircleOutline style={{ fontSize: "18px" }} />,
+          icon: <FaRegCircleCheck style={{ fontSize: "18px" }} />,
         };
         case "8":
         return {

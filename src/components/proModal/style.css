@@ -18,4 +18,18 @@ div.promodal-container div.overlay{
 div.promodal-container div.modal-content-container {
     position: relative;
     max-width: 480px;
+    min-width: 400px;
+}
+
+
+@media screen and (max-width:768px) {
+    div.promodal-container div.btn-container div.first-btn{
+        width: 48%;
+    }
+    div.promodal-container div.btn-container div.second-btn{
+        width: 48%;
+    }
+    div.promodal-container div.modal-content-container{
+        max-width: 90%;
+    }
 }

@@ -206,10 +206,10 @@ export default function OrderTable() {
   .slice((activePage - 1) * dataPerPage, activePage * dataPerPage)
   .map((order, index) => {
     const phase = getOrderPhaseUi(order.phase);
-    const isCartOpen = openMobileCartIndex === order.objId;
+    const isCartOpen = openMobileCartIndex === order._id;
     return (
       <div
-        key={order.objId || index}
+        key={order._id || index}
         className="mobile-order-container bg_color_white rounded-1 px-3 py-3 mb-3"
       >
         <div className="title-container d-flex justify-content-between align-items-center">
@@ -232,7 +232,7 @@ export default function OrderTable() {
           </div>
           <span className="d-flex cursor_pointer">
             <IoIosArrowDown
-              onClick={() => setOpenMobileCartIndex(isCartOpen ? null : order.objId)}
+              onClick={() => setOpenMobileCartIndex(isCartOpen ? null : order._id)}
               style={{ fontSize: "16px" }}
             />
           </span>

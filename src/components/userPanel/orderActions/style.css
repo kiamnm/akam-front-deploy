@@ -3,10 +3,10 @@ div.orders-action-container{
 }
 
 div.orders-action-container div.input-container{
-    box-shadow:  2px 2px 4px rgba(107, 107, 107, 0.164);
+    box-shadow:  2px 2px 4px rgba(107, 107, 107, 0.103);
 }
 div.orders-action-container .item.button{
-    box-shadow:  2px 2px 4px rgba(107, 107, 107, 0.164);
+    box-shadow:  2px 2px 4px rgba(107, 107, 107, 0.103);
 }
 div.orders-action-container .sort-container, div.orders-action-container .filter{
     box-shadow:  2px 2px 4px rgba(122, 21, 21, 0.164);
@@ -30,7 +30,7 @@ div.orders-action-container div.sort-filter-detaill{
     
     height: auto;
 display: none;
-box-shadow:  4px 4px 2px rgba(107, 107, 107, 0.164);
+box-shadow:  4px 4px 2px rgba(107, 107, 107, 0.103);
     left: 0;
     top:44px;
     border: 1px solid #FF5050;

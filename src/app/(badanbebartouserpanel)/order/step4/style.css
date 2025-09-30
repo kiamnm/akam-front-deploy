@@ -1,0 +1,45 @@
+
+div.step-page-container.step4 div.question{
+background-color: #E2E2E2;
+}
+div.step-page-container.step4 div.tips-container{
+    background-color: #FFF3CD;
+    border: 1px solid #FFC107;
+    color: #856404;
+    flex: 3;
+}
+
+div.step-page-container.step4 div.bill-container{
+flex: 2;
+}
+div.step-page-container.step4 div.tax{
+    border-bottom: 1px solid black;
+}
+
+div.step-page-container.step4 div.previous-step{
+    background-color: #EDEDED;
+    color: #B3B3B3;
+    border: 1px solid #B3B3B3;
+}
+input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  accent-color: #FF5050; /* رنگ انتخابی */
+  cursor: pointer;
+}
+
+@media screen and (max-width:768px) {
+    div.step-page-container.step4 div.left{
+        width: 100%;
+    }
+    div.step-page-container.step4 div.question{
+background-color: #E2E2E2;
+width: 48%;
+}
+div.step-page-container.step4 div.print{
+
+width: 48%;
+}
+}
+
+

@@ -8,7 +8,7 @@ import { LuFileSymlink } from "react-icons/lu";
 export default function OrderUploadResult() {
     const {order}=useContext(wizardProcessContext)
   return (
-     <div className="file-detail-container d-flex justify-content-between align-items-center ">
+     <div className="file-detail-container d-flex justify-content-between align-items-center rounded-1">
            <div className="left d-flex justify-content-center align-items-center"> 
             <span className="d-flex align-items-center justify-content-center">
               <LuFileSymlink style={{ fontSize: "22px", color: "#4b4b4b" }} />
@@ -45,7 +45,7 @@ uploadFile}</p>
               >
                 {" "}
                 <MdOutlineFileDownload
-                  style={{ fontSize: "24px", color: "#4b4b4b" }}
+                  style={{ fontSize: "22px", color: "#4b4b4b" }}
                 />
               </Tooltip>
             </span>

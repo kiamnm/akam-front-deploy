@@ -7,6 +7,12 @@ import "./style.css"
 import MobileMenu from "@/components/mobileMenu/MobileMenu";
 import ClientLayout from "@/components/clientLayout/ClientLayout";
 import { IoMenu } from "react-icons/io5";
+import { useDropzone } from "react-dropzone";
+import { BsCloudUpload } from "react-icons/bs";
+import Tooltip from "@mui/material/Tooltip";
+import { FaRegTrashAlt } from "react-icons/fa";
+import { LuFileSymlink } from "react-icons/lu";
+import { MdOutlineFileDownload } from "react-icons/md";
 
 
 
@@ -14,6 +20,10 @@ import { IoMenu } from "react-icons/io5";
 
 export default function RootLayout({ children }) {
   const [isSideBarMenuOpen,setIsSideBarMenuOpen]=useState(false)
+
+
+
+  
   return (
         <div className="user-panel-page  bg_color_body d-flex flex-column">
           <DesktopMenu></DesktopMenu>
@@ -43,7 +53,7 @@ export default function RootLayout({ children }) {
           </div>
             <Sidebar isSideBarMenuOpen={isSideBarMenuOpen} setIsSideBarMenuOpen={setIsSideBarMenuOpen}></Sidebar>
           
-           <div className="w-100 user-panel-content flex-grow-1 d-flex flex-column">
+           <div className="w-100 user-panel-content flex-grow-1 d-flex flex-column ">
           {children}
           
          

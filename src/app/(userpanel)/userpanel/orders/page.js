@@ -1,7 +1,7 @@
 import React from "react";
 import "./style.css";
 import ClientLayout from "@/components/clientLayout/ClientLayout";
-import OrdersStatus from "@/components/userPanel/ordersStatus/OrdersStatus";
+import OrdersStatus from "@/components/userPanel/orderStatus/OrdersStatus";
 import OrderTable from "@/components/userPanel/orderTable/OrderTable";
 import OrderPagination from "@/components/userPanel/orderPagination/OrderPagination";
 import { OrderProvider } from "@/context/userPanel/Order";

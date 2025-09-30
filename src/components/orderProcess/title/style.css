@@ -1,8 +1,14 @@
-.order-page .header-container div.phase-status-container {
+/* .order-page .header-container div.phase-status-container {
     max-width: 160px;
-}
-.order-page .header-container div.cansle-button{
+    background-color: red!important;
+} */
+.order-page .header-container div.cansle-button.enable{
     background-color: #F8D7DA;
     color: #DC3545;
     border: 1px solid #DC3545;
+}
+.order-page .header-container div.cansle-button.disable{
+background-color: #EDEDED;
+color: #B3B3B3;
+border: 1px solid #B3B3B3;
 }

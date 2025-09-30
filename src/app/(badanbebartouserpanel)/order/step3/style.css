@@ -1,0 +1,13 @@
+div.step-page-container.step3 div.tip-container{
+    background-color:#D1ECF1 ;
+    border: 1px solid #17A2B8;
+}
+div.step-page-container.step3 div.tip-container p{
+    color: #0C5460;
+}
+
+
+div.step-page-container.step3 div.button-container .next-step{
+    background-color:#EDEDED ;
+    border: 1px solid #B3B3B3;
+}

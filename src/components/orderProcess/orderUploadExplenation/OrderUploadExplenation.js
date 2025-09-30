@@ -10,7 +10,7 @@ export default function OrderUploadExplenation() {
        <textarea 
        onChange={(e)=>{setUploadFormExplenation(e.target.value)}}
        value={uploadFormExplenation}
-    placeholder='توضیحات' className=' fs_14 rounded-1 p-2 anjoman_regular' name="" id="explenation" ></textarea>
+    placeholder='اگر سفارش شما نیاز به توضیحی دارد اینجا بنویسید ...' className=' fs_14 rounded-1 p-2 anjoman_regular' name="" id="explenation" ></textarea>
     </div>
   )
 }
