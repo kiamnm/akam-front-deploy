@@ -21,6 +21,7 @@ import { wizardProcessContext } from "@/context/userPanel/wizardProcess";
 import { FaCircle } from "react-icons/fa";
 import { IoIosArrowDropright } from "react-icons/io";
 import { FaRegCircleCheck } from "react-icons/fa6";
+import ProUpload from "@/components/proUpload/ProUpload";
 
 
 export default function page() {
@@ -37,6 +38,7 @@ export default function page() {
   const {order}=useContext(wizardProcessContext)
   const [total, setTotal] = useState(0);
   const [selectedBank, setSelectedBank] = useState("melat");
+  const [status,setStatus]=useState("idle")
   
 const previousAction=()=>{
   setIsPreviuosModalShow(true);
@@ -236,7 +238,7 @@ useEffect(() => {
           <p className="title fs_16 anjoman_semibold  text-center">
             بارگذاری رسید
           </p>
-          <div>
+          {/* <div>
             <PaymentUploadBox
               file={file}
               setFile={setFile}
@@ -245,7 +247,13 @@ useEffect(() => {
               isModalShow={isUploadErrModalShow}
               setIsModalShow={setIsUploadErrModalShow}
             ></PaymentUploadBox>
-          </div>
+          </div> */}
+          <div className="w-100 d-flex justify-content-center upload-master-container">
+                  {/* <div className="w-50 "> */}
+                    <ProUpload file={file} setFile={setFile}  setUploadErr={setUploadErr} status={status} setStatus={setStatus} ></ProUpload>
+                  {/* </div> */}
+                  
+                </div>
         </div>
 
         

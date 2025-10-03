@@ -1,11 +1,23 @@
 "use client";
-import React, { useState,useContext } from "react";
+import React, { useState,useContext,useEffect } from "react";
 import { FormContext } from "../context/FormContext";
+import { AuthContext } from "@/context/AuthContext";
 import "./style.css";
 
 export default function ConstInputs() {
   const {name,setName,phone,setPhone,nameError,phoneError}=useContext(FormContext)
- 
+  const {user}=useContext(AuthContext)
+
+
+
+  useEffect(() => {
+    if (user?.name) {
+      setName(user.name);
+    }
+    if (user?.phone) {
+      setPhone(user.phone);
+    }
+  }, [user]);
   return (
     <div className="estelam-const-input-container">
       <div className="inputs-container d-flex flex-wrap justify-content-center ">
@@ -20,6 +32,7 @@ export default function ConstInputs() {
             placeholder="نام و نام خانوادگی"
             id="name"
             type="text"
+            disabled={!!user?.name}
           />
           {nameError && (
             <p className="color_orange fs_12 anjoman_light pt-2 m-0">
@@ -39,6 +52,7 @@ export default function ConstInputs() {
             placeholder="شماره موبایل"
             id="phone"
             type="text"
+            disabled={!!user?.phone}
           />
           {phoneError && (
             <p className="color_orange fs_12 anjoman_light pt-2 m-0">

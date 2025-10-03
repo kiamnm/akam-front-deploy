@@ -10,8 +10,9 @@ const fetchOtp = async (
   try {
     setPending(true);
     const body = JSON.stringify({ phone,code});
-    const response = await fetch(`${baseUrl}auth/verifyregister`, {
+    const response = await fetch(`${baseUrl}auth/verifyOtp`, {
       method: "POST",
+       credentials: "include",
       headers: {
         "Content-type": "application/json",
       },
@@ -23,7 +24,7 @@ const fetchOtp = async (
     if (response.status === 200) {
       setOtpError("");
       
-      return true;
+      return parseResponse.user;
     } else {
       setOtpError(parseResponse.message);
       return false;

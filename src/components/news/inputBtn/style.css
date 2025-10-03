@@ -14,6 +14,10 @@ width: 80%;
     border-radius: 4px;
     transition: 0.3s;
 }
+.news-inputbtn-container button.submit-btn.disable{
+background-color:#ff505077 ;
+cursor: auto;
+}
 @media screen and (max-width:992px) {
     .news-inputbtn-container div.input{
 width: 100%;
@@ -35,7 +39,7 @@ background-color: #EDEDED;
 border-radius: 6px;
 font-size: 14px;
  padding: 0px 8px;
-font-family: "anjomanLight";
+
 border: 1px solid #B3B3B3;
 }
 .news-inputbtn-container div.input input:focus {

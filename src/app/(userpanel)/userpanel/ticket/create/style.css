@@ -1,7 +1,7 @@
 div.create-tikcet-tab-container .back-btn {
 border: 1px solid black;
 }
-div.close-btn{
+div.create-tikcet-tab-container  div.close-btn{
     background-color: #F8D7DA;
     color: #721C24;
     border: 1px solid #721C24;

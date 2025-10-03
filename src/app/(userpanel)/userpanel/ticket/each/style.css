@@ -1,0 +1,68 @@
+div.ticket-message-page-container div.sub-container{
+    height: calc(100dvh - 168px);
+}
+div.messages-container{
+    overflow-y: auto;
+    border-bottom: 1px solid rgba(151, 151, 151, 0.397);
+}
+
+div.ticket-message-page-container div.closse{
+    background-color: #F8D7DA;
+    color: #721C24;
+    border: 1px solid #721C24;
+
+}
+
+div.ticket-message-page-container  div.title-container{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.541);
+}
+div.ticket-message-page-container  div.usermsg{
+border-top-left-radius:4px ;
+border-top-right-radius:4px ;
+border-bottom-left-radius:4px ;
+}
+
+div.ticket-message-page-container  div.adminmsg{
+border-top-left-radius:8px ;
+border-top-right-radius:8px ;
+border-bottom-right-radius:8px ;
+}
+div.file-container{
+    background-color: #B3B3B3;
+}
+
+div.message-container{
+    min-width: 40%;
+}
+div.type-msg-container div.box-container{
+    border: 1px solid rgba(177, 177, 177, 0.644);
+}
+div.type-msg-container div.upload{
+    background-color: #E2E2E2;
+    color:#B3B3B3 ;
+
+}
+div.type-msg-container textarea:focus{
+outline: none;
+resize: none;
+}
+div.type-msg-container textarea{
+height: 100%;
+resize: none;
+
+align-content: center;
+overflow: auto;       /* یا scroll */
+  scrollbar-width: none;  /* برای Firefox */
+  -ms-overflow-style: none;
+}
+div.upload-file{
+    background-color:rgba(114, 114, 114, 0.192) ;
+}
+div.type-msg-container textarea::-webkit-scrollbar{
+    display: none;
+}
+@media screen and (max-width:768px) {
+    div.message-container{
+    min-width: 100%;
+}
+}

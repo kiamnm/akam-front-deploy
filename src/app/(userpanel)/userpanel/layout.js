@@ -40,7 +40,7 @@ export default function RootLayout({ children }) {
          
           
         
-         <div className="user-panel-layout position-relative   d-flex flex-column flex-lg-row justify-content-start  justify-content-lg-between flex-grow-1">
+         <div className="user-panel-layout position-relative   d-flex flex-column flex-lg-row justify-content-start  justify-content-lg-between flex-grow-1 ">
            <div className="d-block d-lg-none">
              <ClientLayout>
             <div className="userpanel-mobile-menu-icon d-flex gap-2 align-items-center mt-3">

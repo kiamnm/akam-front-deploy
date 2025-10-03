@@ -35,8 +35,7 @@ export default function SubmitBtn() {
       setPending
     );
     if (result) {
-      setName("");
-      setPhone("");
+      
       setDynamicItems([{ productName: "", amount: "" }]);
       successNotif("فرم با موفقیت ارسال شد.");
     } else {

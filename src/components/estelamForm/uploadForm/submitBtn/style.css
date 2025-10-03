@@ -10,7 +10,7 @@
     transition:  0.3s ease,
 }
 .submit-upload-form-btn .disable{
-    background-color: #888888;
+    background-color: #ff505085;
 }
 .submit-upload-form-btn .disable:hover{
     background-color: #888888;

@@ -5,7 +5,7 @@ import "./style.css"
 import ClientLayout from '@/components/clientLayout/ClientLayout'
 
 import RegisterWrapper from '@/components/registerWrapper/RegisterWrapper'
-import { RegisterProvider } from '@/context/RegisterContext'
+// import { RegisterProvider } from '@/context/RegisterContext'
 
 export default function Register() {
   
@@ -13,9 +13,9 @@ export default function Register() {
     <div >
       <ClientLayout>
         <div className='register-page-container   pt-5'>
-        <RegisterProvider>
+        {/* <RegisterProvider> */}
           <RegisterWrapper></RegisterWrapper>
-        </RegisterProvider>
+        {/* </RegisterProvider> */}
         
           
         </div>

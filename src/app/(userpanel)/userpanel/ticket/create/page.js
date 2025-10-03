@@ -13,6 +13,7 @@ import ProModal from "@/components/proModal/ProModal";
 import { IoWarningOutline } from "react-icons/io5";
 import fetchCreateTicket from "@/utils/userpanel/ticket/fetchCreateTicket";
 import { successNotif, failNotif } from "@/utils/notif";
+import ProUpload from "@/components/proUpload/ProUpload";
 
 
 export default function page() {
@@ -24,6 +25,7 @@ export default function page() {
   const [formErr,setFormErr]=useState("")
   const [isFormValidationModalShow,setIsFormValidationModalShow]=useState(false)
   const [pending,setPending]=useState(false)
+  const [status,setStatus]=useState("idle")
   const onDrop = (acceptedFiles) => {
       
       console.log(acceptedFiles);
@@ -48,25 +50,25 @@ export default function page() {
         }
       }
     };
-    const handleRemove=()=>{
-      setFile(null)
-    }
-  const handleDownload = () => {
-    if (!file) return;
+  //   const handleRemove=()=>{
+  //     setFile(null)
+  //   }
+  // const handleDownload = () => {
+  //   if (!file) return;
   
-    const url = URL.createObjectURL(file);
-    const a = document.createElement("a");
-    a.href = url;
-    a.download = file.name;
-    document.body.appendChild(a);
-    a.click();
-    document.body.removeChild(a);
-    URL.revokeObjectURL(url); // آزاد کردن حافظه
-  };
-    const { getRootProps, getInputProps, isDragActive } = useDropzone({
-      onDrop,
-      multiple: true, // فقط یک فایل بگیره
-    });
+  //   const url = URL.createObjectURL(file);
+  //   const a = document.createElement("a");
+  //   a.href = url;
+  //   a.download = file.name;
+  //   document.body.appendChild(a);
+  //   a.click();
+  //   document.body.removeChild(a);
+  //   URL.revokeObjectURL(url); // آزاد کردن حافظه
+  // };
+  //   const { getRootProps, getInputProps, isDragActive } = useDropzone({
+  //     onDrop,
+  //     multiple: true, // فقط یک فایل بگیره
+  //   });
     useEffect(() => {
       
       if (uploadErr.length > 0) {
@@ -119,7 +121,7 @@ failNotif("خطا در ارسال تیکت")
     }
   return (
     <div className="create-tikcet-tab-container px-3 pt-3 d-flex flex-column  flex-grow-1 ">
-      <div className="bg_color_white rounded-2 py-3 px-3">
+      <div className="bg_color_white rounded-2 py-3 px-3 flex-grow-1 d-flex flex-column justify-md-content-between justify-content-start">
         <div className="title d-flex justify-content-between align-items-center">
           <p className="fs_16 anjoman_semibold">ثبت تیکت جدید</p>
           <div className="d-flex gap-2">
@@ -139,7 +141,7 @@ failNotif("خطا در ارسال تیکت")
             <label className="fs_14 anjoman_regular mb-2" htmlFor="subject">موضوع تیکت*</label>
             <input value={subject} onChange={(e)=>{setSubject(e.target.value)}} id="subject" className="rounded-1" type="text" />
         </div>
-        <div className="explnation-container d-flex flex-column mt-4">
+        <div className="explnation-container d-flex flex-column mt-2 mt-md-4">
           <label className="fs_14 anjoman_regular mb-2" htmlFor="explenation">توضیحات</label>
           <textarea value={message} onChange={(e)=>setMessage(e.target.value)} className="rounded-1" name="" id="explenation"></textarea>
         </div>
@@ -147,9 +149,14 @@ failNotif("خطا در ارسال تیکت")
 
         
 
+ <div className="w-100 d-flex justify-content-center upload-master-container  mt-4">
+        {/* <div className="w-50 "> */}
+          <ProUpload file={file} setFile={setFile}  setUploadErr={setUploadErr} status={status} setStatus={setStatus} ></ProUpload>
+        {/* </div> */}
+        
+      </div>
 
-
-     {!file &&<div
+     {/* {!file &&<div
       {...getRootProps()}
       className="upload-box-container ticket-upload cursor_pointer  d-flex flex-column justify-content-center align-items-center mt-4 "
     >
@@ -245,7 +252,7 @@ failNotif("خطا در ارسال تیکت")
               <LuFileSymlink style={{ fontSize: "22px", color: "#4b4b4b" }} />
             </span>
           </div>
-        </div>  }
+        </div>  } */}
 
         <div className="send-btn fs_14 anjoman_regular  d-flex justify-content-end mt-4">
           <div onClick={handleClickSubmit} className="bg_color_orange text-start rounded px-4 py-1 color_white cursor_pointer">

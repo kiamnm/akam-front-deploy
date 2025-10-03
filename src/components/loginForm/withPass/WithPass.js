@@ -8,12 +8,17 @@ import validation from "./validation";
 import fetchPassForm from "./../../../utils/login/fetchPassForm";
 import { AuthContext } from "@/context/AuthContext";
 import { useRouter } from "next/navigation";
+import { successNotif } from "@/utils/notif";
 
-export default function WithPass() {
-  const router=useRouter()
-  const { phone, setPhone, setFormState, setSixDigitShow } =
-    useContext(LoginContext);
-    const {setIsLogin,setUserRole,setUser}=useContext(AuthContext)
+export default function WithPass({
+  setFormState,
+  phone,
+  setPhone,
+  setIsOtpShow,
+}) {
+  const router = useRouter();
+
+  const { login } = useContext(AuthContext);
   const [showPassword, setShowPassword] = useState(false);
 
   const [password, setPassword] = useState("");
@@ -25,17 +30,19 @@ export default function WithPass() {
   const handleClickSubmit = async () => {
     const isValid = validation(phone, password, setPhoneErr, setPassErr);
     if (isValid) {
-      const result = await fetchPassForm(
+      ///setIsOtpShow ra be tabe midim ke age ehraz hoviat nasode bod otp neshon dade beshe
+      const user = await fetchPassForm(
         phone,
         password,
         setPending,
         setPassErr,
-        setSixDigitShow
+        setIsOtpShow
       );
-      result && router.push("/userpanel");
-      result && setIsLogin(true);
-      result && setUserRole(result.role);
-      result && setUser(result);
+      if (user) {
+        successNotif("با موفقیت وارد شدید. در حال انتقال به پنل کاربری ...");
+        login(user);
+        router.push("/userpanel/orders");
+      }
     }
   };
 

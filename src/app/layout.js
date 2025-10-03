@@ -5,6 +5,7 @@ import { AuthProvider } from "@/context/AuthContext";
 import { CartProvider } from "@/context/cartContext";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { NotifProvider } from "@/context/NotfContext";
 export const metadata = {
   title: "آهن آکام",
   description: "بهترین قیمت آهن‌آلات در ایران",
@@ -22,10 +23,12 @@ export default function RootLayout({ children }) {
       </head>
       <AuthProvider>
         <CartProvider>
+          <NotifProvider>
           <body>
             {children}
             <ToastContainer  />
           </body>
+          </NotifProvider>
         </CartProvider>
       </AuthProvider>
     </html>

@@ -1,32 +1,24 @@
-"use client"
-import React,{useState,useContext} from 'react'
-import "./style.css"
+"use client";
+import React, { useState, useContext } from "react";
+import "./style.css";
 import formValidation from "./validation";
-import fetchRegisterNews from '@/utils/news/fetchRegisterNews';
-import fetchPhoneForm from '@/utils/login/fetchPhoneForm';
+import fetchRegisterNews from "@/utils/news/fetchRegisterNews";
+import fetchPhoneForm from "@/utils/login/fetchPhoneForm";
 import { successNotif, failNotif } from "@/utils/notif";
-import { AuthContext } from "@/context/AuthContext"
+import { AuthContext } from "@/context/AuthContext";
 import ProFullScreenOtp from "@/components/proFullScreenOtp/ProFullScreenOtp";
 export default function InputBtn() {
-  
-    const { checkAuth } = useContext(AuthContext);
-  const [phone,setPhone]=useState("")
-  const [phoneErr,setPhoneErr]=useState("")
-  const [pending,setPending]=useState(false)
-  const [isOtpShow,setIsOtpShow]=useState(false)
-  const handleClickSubmit=async()=>{
-    const isValidate = formValidation(
-      phone,
-      setPhoneErr
-    );
+  const { checkAuth, user, setUser } = useContext(AuthContext);
+  const [phone, setPhone] = useState("");
+  const [phoneErr, setPhoneErr] = useState("");
+  const [pending, setPending] = useState(false);
+  const [isOtpShow, setIsOtpShow] = useState(false);
+  const handleClickSubmit = async () => {
+    const isValidate = formValidation(phone, setPhoneErr);
     if (isValidate === true) {
       const user = await checkAuth();
       if (!user) {
-        const isOtpSent = await fetchPhoneForm(
-          phone,
-          setPhoneErr,
-          setPending
-        );
+        const isOtpSent = await fetchPhoneForm(phone, setPhoneErr, setPending);
         if (isOtpSent) {
           setIsOtpShow(true);
         } else {
@@ -38,32 +30,58 @@ export default function InputBtn() {
         await sendDataToServer();
       }
     }
-  }
-  const sendDataToServer=async()=>{
-    const result = await fetchRegisterNews(
-      phone
-    );
-    if (result) {
-      setPhone("")
-      setPhoneErr("")
-      successNotif("شما با موفقیت عضو شدید.")
+  };
+  const sendDataToServer = async () => {
+    const result = await fetchRegisterNews(phone);
+    if (result === 409) {
+      setPhone("");
+      setPhoneErr("");
+      successNotif("شما از قبل عضو خبرنامه هستید");
+    } else if (result) {
+      setPhone("");
+      setPhoneErr("");
+      successNotif("شما با موفقیت عضو شدید.");
+      setUser((prevUser) => ({
+        ...prevUser, // بقیه ویژگی‌ها را نگه می‌دارد
+        isInNews: true, // فقط isInNews را به true تغییر می‌دهد
+      }));
+      console.log("user", user);
     } else {
       failNotif("خطایی در ارسال فرم رخ داد!");
     }
-  }
+  };
   return (
-    <div className='news-inputbtn-container d-flex flex-column flex-lg-row'>
-      <div className='input'>
-         <div className="  ">
-            <input value={phone} onChange={(e)=>{
-              setPhone(e.target.value)
-            }} type="text" placeholder='شماره موبایل خود را وارد کنید.' />
+    <div className="news-inputbtn-container d-flex flex-column flex-lg-row">
+      <div className="input">
+        <div className=" anjoman_num_regular color_text ">
+          <input
+          className="color_text"
+            disabled={user?.isInNews}
+            value={phone}
+            onChange={(e) => {
+              setPhone(e.target.value);
+            }}
+            type="text"
+            placeholder={`${
+              user?.isInNews
+                ? "شما در خبرنامه آکام عضو هستید."
+                : "شماره موبایل خود را وارد کنید."
+            }`}
+          />
         </div>
-        <p className='err color_orange fs_12 anjoman_light pt-2 m-0'>{phoneErr}</p>
+        <p className="err color_orange fs_12 anjoman_light pt-2 m-0">
+          {phoneErr}
+        </p>
       </div>
-       
-        <button className='bg_color_orange color_white anjoman_medium fs_14' onClick={handleClickSubmit}>
-           {pending ? (
+
+      <button
+        disabled={user?.isInNews}
+        className={`color_white anjoman_medium fs_14 submit-btn ${
+          user?.isInNews ? "disable" : "bg_color_orange "
+        }`}
+        onClick={handleClickSubmit}
+      >
+        {pending ? (
           <span
             className="spinner-border spinner-border-sm me-2"
             role="status"
@@ -72,14 +90,14 @@ export default function InputBtn() {
         ) : (
           "عضویت"
         )}
-        </button>
-         {isOtpShow && (
-                <ProFullScreenOtp
-                  setIsOtpShow={setIsOtpShow}
-                  handleIsOtpTrue={sendDataToServer}
-                  phoneNumber={phone}
-                ></ProFullScreenOtp>
-              )}
+      </button>
+      {isOtpShow && (
+        <ProFullScreenOtp
+          setIsOtpShow={setIsOtpShow}
+          handleIsOtpTrue={sendDataToServer}
+          phoneNumber={phone}
+        ></ProFullScreenOtp>
+      )}
     </div>
-  )
+  );
 }

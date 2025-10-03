@@ -145,7 +145,7 @@ return {text:"بسته شده",class:"closed",icon:<IoCloseCircleOutline style={
                   </td> */}
                   <td className="align-middle">
                     <Link
-                      href={`/order/step${"test"}?userId=${user?._id}&orderId=${"test"}`}
+                      href={`/userpanel/ticket/each/?ticketId=${ticket._id}`}
                       className="color_black fs_18 cursor_pointer ps-3"
                     >
                       <Tooltip

@@ -20,16 +20,20 @@ const fetchRegisterNews=async(phone)=>{
       }, // مهم
         });
         const parseResponse=await res.json();
-        console.log(res,"res");
+        console.log(res,"resaaaaaaaaaaaaan");
+        
         console.log(parseResponse,"parseresponse");
         if(res.status===201){
             
           
             return true
+        }else if (res.status===409){
+            return 409
         }else{
-            
-            return false
+  return false
         }
+          
+        
     }catch(err){
         
         return false

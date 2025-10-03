@@ -10,3 +10,7 @@ div.upload-form-container{
         
     
 }
+div.upload-form-container  .upload-master-container{
+     max-width: 864px;
+    margin: 16px auto;
+}

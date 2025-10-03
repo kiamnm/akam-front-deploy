@@ -7,9 +7,9 @@ import isValidate from "./validation";
 import { RegisterContext } from "@/context/RegisterContext";
 import fetchForm from "../../utils/register/fetchForm";
 
-export default function RegisterForm() {
-  const { phone, setPhone, setSixDigitShow, setSecondsLeft,setOtpError,setOtp} =
-    useContext(RegisterContext);
+
+export default function RegisterForm({setIsOtpShow,phone,setPhone}) {
+  
   const [showPassword, setShowPassword] = useState(false);
   const [showRepeatPassword, setShowRepeatPassword] = useState(false);
 
@@ -22,9 +22,7 @@ export default function RegisterForm() {
   const [fetchErr, setFetchErr] = useState("");
 
   const handleClickSubmit = async () => {
-    setOtpError("")
-    setOtp(["", "", "", "", "", ""])
-    setSecondsLeft(15)
+    
     const isValid = isValidate(
       phone,
       password,
@@ -43,8 +41,7 @@ export default function RegisterForm() {
         setFetchErr
       );
       if (result) {
-        setSixDigitShow(true);
-        setSecondsLeft(15);
+        setIsOtpShow(true)
       }
     }
   };

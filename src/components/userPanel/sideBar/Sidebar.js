@@ -14,15 +14,18 @@ import { HiOutlineUser } from "react-icons/hi";
 import { PiNoteLight } from "react-icons/pi";
 import { FaRegStickyNote } from "react-icons/fa";
 import { RiBillLine } from "react-icons/ri";
+import { successNotif,failNotif } from "@/utils/notif";
+import { useRouter } from "next/navigation";
 
 
 
 import Link from "next/link";
 
 export default function Sidebar({ setIsSideBarMenuOpen, isSideBarMenuOpen }) {
+  const router=useRouter()
   const pathname = usePathname();
   const [identifier, setIdentifier] = useState("Username");
-  const { user } = useContext(AuthContext);
+  const { user,logout } = useContext(AuthContext);
 
   useEffect(() => {
     
@@ -44,10 +47,20 @@ export default function Sidebar({ setIsSideBarMenuOpen, isSideBarMenuOpen }) {
       document.body.style.overflow = "auto";
     };
   }, [isSideBarMenuOpen]);
+
+  const handleClickLogout=async()=>{
+const result=await logout()
+if(result){
+successNotif("با موفقیت خارج شدید ...")
+router.push("/")
+}else{
+failNotif("خطا در ارتباط با سرور ...")
+}
+  }
   return (
     <div
       className={`sidebar-container px-3 py-3 d-flex flex-column justify-content-between ${
-        isSideBarMenuOpen ? "open" : "close"
+        isSideBarMenuOpen ? "open-menu" : "close-menu"
       }`}
     >
       <div className="top">
@@ -134,7 +147,7 @@ export default function Sidebar({ setIsSideBarMenuOpen, isSideBarMenuOpen }) {
           </Link>
         </div>
       </div>
-      <div className="bottom bg_color_white rounded-1 py-1 cursor_pointer px-2 d-flex justify-content-center gap-2 anjoman_medium color_orange fs_14">
+      <div onClick={handleClickLogout} className="bottom bg_color_white rounded-1 py-1 cursor_pointer px-2 d-flex justify-content-center gap-2 anjoman_medium color_orange fs_14">
         <span className="">
           <IoExitOutline style={{ fontSize: "22px" }} />
         </span>

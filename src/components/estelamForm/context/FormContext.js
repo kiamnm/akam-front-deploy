@@ -18,6 +18,8 @@ export const FormProvider = ({ children }) => {
   const [otpError, setOtpError] = useState("");
   const [isOtpShow, setIsOtpShow] = useState(false);
   const [uploadErr,setUploadErr]=useState("")
+  const [status,setStatus]=useState("idle")
+  
   
      const [isModalShow,
      setIsModalShow]=useState("")
@@ -53,7 +55,8 @@ export const FormProvider = ({ children }) => {
      isModalShow,
      setIsModalShow,
      uploadErr,
-     setUploadErr
+     setUploadErr,
+     status,setStatus
 
      
   };

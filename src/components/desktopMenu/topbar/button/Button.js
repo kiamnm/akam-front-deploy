@@ -11,7 +11,33 @@ export default function Button() {
     const {isLogin}=useContext(AuthContext)
   return (
     <div className="topbar-btn-container d-flex align-items-center">
-      <Tooltip title="سبد خرید" placement="right" componentsProps={{
+      
+
+
+ <Tooltip title="اعلان‌ها" placement="bottom" componentsProps={{
+    tooltip: {
+      sx: {
+        fontFamily: "anjomanRegular",   
+        fontSize: "12px",
+        
+      },
+    },
+  }}>
+      <div
+        
+        className="notif bg_color_white d-inline-block position-relative d-flex align-items-center cursor_pointer"
+      >
+        <img src="/images/bell.svg" alt="سبد خرید" />
+        {listCount>0 && (
+            <span className="notif-badge bg_color_orange fs_10 anjoman_num_regular d-flex justify-content-center align-items-center position-absolute  ">{listCount}</span>
+        )}
+      </div>
+      </Tooltip>
+
+
+
+
+      <Tooltip title="سبد خرید" placement="bottom" componentsProps={{
     tooltip: {
       sx: {
         fontFamily: "anjomanRegular",   

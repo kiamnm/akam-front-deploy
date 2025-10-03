@@ -8,7 +8,7 @@ const fetchPassFrom = async (
 
     setPending(true);
     const body = JSON.stringify({ phone,password });
-    const response = await fetch(`${baseUrl}auth/loginwithpassword`, {
+    const response = await fetch(`${baseUrl}auth/loginWithPassword`, {
       method: "POST",
       credentials: "include",
       headers: {

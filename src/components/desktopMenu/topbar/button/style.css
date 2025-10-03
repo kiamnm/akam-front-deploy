@@ -29,6 +29,15 @@
     padding: 0px 8px;
     border-radius: 4px;
   }
+   .topbar-btn-container .notif {
+    height: 36px;
+    padding: 0px 8px;
+    border-radius: 4px;
+  }
+  .topbar-btn-container .notif img{
+  width: 20px;
+      height: 20px;
+   }
    .topbar-btn-container .cart img{
   width: 20px;
       height: 20px;
@@ -45,4 +54,17 @@
     border-radius: 50%;
     
   }
+  .topbar-btn-container .notif .notif-badge {
+    top: -8px;
+    right: -8px;
+    
+    color: white;
   
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    
+  }
+  
+
+

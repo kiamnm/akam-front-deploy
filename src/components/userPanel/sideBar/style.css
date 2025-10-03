@@ -38,10 +38,10 @@
     
     
 }
-.close{
+.close-menu{
 transform: translateX(100%);
 }
-.open{
+.open-menu{
     transform: translateX(0);  
 }
   }

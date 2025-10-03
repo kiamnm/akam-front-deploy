@@ -21,7 +21,8 @@ export default function SubmitBtn() {
     explanation,
 
     setExplanationError,
-
+setStatus,
+status,
     setExplanation,
     isOtpShow,
     setIsOtpShow,
@@ -37,10 +38,10 @@ export default function SubmitBtn() {
       setPending
     );
     if (result) {
+      setStatus("idle")
       setFile(null);
       setExplanation("");
-      setPhone("");
-      setName("");
+      
       successNotif("فرم با موفقیت ارسال شد.");
     } else {
       failNotif("خطایی در ارسال فرم رخ داد!");
@@ -76,7 +77,7 @@ export default function SubmitBtn() {
   return (
     <div className="w-100 d-flex justify-content-center justify-content-lg-end submit-upload-form-btn  ">
       <button
-        disabled={!file}
+        disabled={status==="uploaded"}
         className={`bg_color_orange anjoman_medium fs_14 px-5 ${
           !file ? "disable" : ""
         } `}
