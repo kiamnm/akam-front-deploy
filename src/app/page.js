@@ -66,7 +66,7 @@ export const metadata = {
   },
 };
 
-export default async function Home() {
+export default async function Page() {
   const bestArticles = await fetchBestArticles();
   return (
     <div className="bg_color_body w-100 home-page-container">

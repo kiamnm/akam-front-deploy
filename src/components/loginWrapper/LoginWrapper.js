@@ -28,7 +28,7 @@ export default function LoginWrapper() {
   }
   
   return (
-    <div>
+    <div className="login-wrapper">
       
       {(formState === "phone" && !isOtpShow ) && <WithPhone setIsOtpShow={setIsOtpShow} phone={phone} setPhone={setPhone} phoneErr={phoneErr} setPhoneErr={setPhoneErr} setFormState={setFormState} ></WithPhone>}
 

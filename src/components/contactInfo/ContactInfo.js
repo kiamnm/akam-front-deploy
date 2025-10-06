@@ -20,7 +20,7 @@ export default function ContactInfo() {
             <p className="pe-2 m-0">آدرس</p>
           </div>
           <p className="color_white fs_12 anjoman_regular p-0 m-0 pe-3">
-            تهران - خیابان پاسداران - پلاک 12
+             تهران - خیابان پاسداران - خیابان عراقی - کوچه سرو - پلاک6 - مجموعه آهن آکام
           </p>
         </div>
         <div className="info flex-grow-1 d-flex flex-column justify-content-center bg_color_orange py-3 py-md-0">
@@ -29,7 +29,7 @@ export default function ContactInfo() {
             <p className="pe-2 m-0">ایمیل</p>
           </div>
           <p className="color_white fs_12 anjoman_regular p-0 m-0 pe-3">
-            تهران - خیابان پاسداران - پلاک 12
+          tfakamgostar@gmail.com
           </p>
         </div>
         <div className="info flex-grow-1 d-flex flex-column justify-content-center bg_color_orange py-3 py-md-0">
@@ -37,8 +37,8 @@ export default function ContactInfo() {
             <LuPhone style={{ fontSize: "22px" }} />
             <p className="pe-2 m-0">تلفن</p>
           </div>
-          <p className="color_white fs_12 anjoman_regular p-0 m-0 pe-3">
-            تهران - خیابان پاسداران - پلاک 12
+          <p className="color_white fs_12 anjoman_num-regular p-0 m-0 pe-3">
+            021-91001083
           </p>
         </div>
         <div className="info flex-grow-1 d-flex flex-column justify-content-center bg_color_orange py-3 py-md-0">
@@ -46,8 +46,8 @@ export default function ContactInfo() {
             <FaRegClock style={{ fontSize: "22px" }} />
             <p className="pe-2 m-0">ساعت کاری</p>
           </div>
-          <p className="color_white fs_12 anjoman_regular p-0 m-0 pe-3">
-            تهران - خیابان پاسداران - پلاک 12
+          <p className="color_white fs_12 anjoman_num_regular p-0 m-0 pe-3">
+             شنبه تا چهارشنبه 9 الی 17 -پنجشنبه 9 الی 14
           </p>
         </div>
         <div className="socials-container  d-flex align-items-center justify-content-between  ">

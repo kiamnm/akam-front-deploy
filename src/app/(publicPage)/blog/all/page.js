@@ -6,7 +6,7 @@ import Item from '@/components/articleRow/item/Item'
 import fetchData from './fetchSample'
 import ArticlePagination from '@/components/articlePagination/ArticlePagination'
 
-export default async function All(props) {
+export default async function Page(props) {
   const breadCrumbsData = [
     { title: "آهن آکام", href: "/" },
     { title: "وبلاگ", href: "/blog" },

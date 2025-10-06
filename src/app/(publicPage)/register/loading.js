@@ -1,7 +1,8 @@
 import React from 'react'
+import "./style.css"
 
 export default function loading() {
   return (
-    <div>loding register</div>
+    <div className='register-page-loading-container d-flex align-items-center justify-content-center'>loding register</div>
   )
 }

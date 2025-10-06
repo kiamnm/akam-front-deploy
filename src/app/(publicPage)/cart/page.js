@@ -17,7 +17,7 @@ import {
   deleteItemFromLocalStorage,
 } from "./../../../utils/cart/handleLocalStorage";
 import { BsCart3 } from "react-icons/bs";
-export default function CartTable() {
+export default function Page() {
   const { cartItems, setCartItems } = useContext(CartContext);
   const { checkAuth } = useContext(AuthContext);
   const [pending, setPending] = useState(false);
@@ -256,7 +256,7 @@ const totalPrice = (Array.isArray(cartItems) ? cartItems : []).reduce(
   }
 
   return (
-    <div className="main d-flex flex-column justify-content-center align-items-center">
+    <div className="empty-cart-container main d-flex flex-column justify-content-center align-items-center">
       <img src="./images/empty-cart.png" alt="" />
       <p className="p-0 m-0 fs_14 anjoman_medium">سبد خرید شما خالی میباشد.</p>
     </div>

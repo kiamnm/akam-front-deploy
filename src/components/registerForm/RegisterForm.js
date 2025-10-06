@@ -46,7 +46,7 @@ export default function RegisterForm({setIsOtpShow,phone,setPhone}) {
     }
   };
   return (
-    <div className="mt-5 m-auto register-form-container bg_color_white p-3">
+    <div className="m-auto register-form-container bg_color_white p-3">
       <p className="anjoman_bold fs_14">ثبت نام کاربر جدید</p>
       <div className="input-container ">
         <input

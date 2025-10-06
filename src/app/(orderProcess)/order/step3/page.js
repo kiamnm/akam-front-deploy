@@ -17,7 +17,7 @@ import { FaCircle } from "react-icons/fa";
 import "./style.css";
 import { style } from "d3-selection";
 
-export default function page() {
+export default function Page() {
    const router = useRouter();
       const searchParams = useSearchParams();
       const userObjid = searchParams.get("userId");
@@ -64,7 +64,7 @@ const previousAction=()=>{
 
           <p className="fs_14 anjoman_regular color_text mt-2 text-center mb-1">
             سفارش شما با موفقیت در سامانه ثبت گردید و جهت بررسی به کارشناسان
-            فروش شرکت تجارت فولاد آکام گستر ارجاع داده شد.{" "}
+            فروش شرکت تجارت فولاد آکام گستر ارجاع داده شد.
           </p>
 
           <p className="fs_14 anjoman_num_regular color_text mt-2 text-center">
@@ -85,21 +85,23 @@ const previousAction=()=>{
               <p className=" fs_14 anjoman_regular m-0">نکات مهم :</p>
             </div>
 
-            <p className="fs_14 anjoman_regular mt-2 d-flex align-items-baseline gap-2 text_justify" >
-              <span className="d-flex align-items-center"><FaCircle style={{fontSize:"7px"}} />
-</span>
-              ویرایش سفارش: در صورتی که پیش از صدور پیش‌فاکتور قصد ویرایش سفارش
-              خود را دارید، کافیست روی دکمه "مرحله قبل" کلیک کرده، تغییرات لازم
-              را اعمال نمایید و مجدداً با کلیک بر روی "مرحله بعد" فرآیند را
-              ادامه دهید.
-            </p>
+            <p className="fs_14 anjoman_regular mt-2 d-flex align-items-baseline gap-2 text_justify">
+  <span className="d-flex align-items-center">
+    <FaCircle style={{ fontSize: "7px" }} />
+  </span>
+  ویرایش سفارش: در صورتی که پیش از صدور پیش‌فاکتور قصد ویرایش سفارش
+  خود را دارید، کافیست روی دکمه مرحله قبل کلیک کرده، تغییرات لازم
+  را اعمال نمایید و مجدداً با کلیک بر روی مرحله بعد فرآیند را
+  ادامه دهید.
+</p>
             <p className="fs_14 anjoman_regular mb-0 d-flex align-items-baseline gap-2 text_justify">
-               <span className="d-flex align-items-center"><FaCircle style={{fontSize:"7px"}} />
-</span>
-              لغو سفارش: برای لغو کامل سفارش در هر یک از مراحل، می‌توانید از
-              گزینه "لغو سفارش" که در بالای صفحه (سمت چپ) قرار دارد، استفاده
-              کنید.
-            </p>
+  <span className="d-flex align-items-center">
+    <FaCircle style={{ fontSize: "7px" }} />
+  </span>
+  لغو سفارش: برای لغو کامل سفارش در هر یک از مراحل، می‌توانید از
+  گزینه لغو سفارش که در بالای صفحه (سمت چپ) قرار دارد، استفاده
+  کنید.
+</p>
           </div>
           <p className="fs_14 anjoman_regular text-center mt-4">از شکیبایی شما سپاسگذاریم.</p>
         </div>

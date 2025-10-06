@@ -13,7 +13,7 @@ import { FaTruckMoving } from "react-icons/fa";
 import { FaCircle } from "react-icons/fa";
 
 
-export default function page() {
+export default function Page() {
   const { order } = useContext(wizardProcessContext);
   const [sum, setSum] = useState(0);
   const [tax, setTaxt] = useState(0);

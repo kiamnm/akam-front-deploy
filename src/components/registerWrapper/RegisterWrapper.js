@@ -21,7 +21,7 @@ export default function RegisterWrapper() {
       }
     
   return (
-    <div>
+    <div className='register-wrapper '>
       
         {!isOtpShow && (
                   <RegisterForm phone={phone} setPhone={setPhone} setIsOtpShow={setIsOtpShow} ></RegisterForm>

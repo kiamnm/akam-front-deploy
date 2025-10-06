@@ -6,7 +6,7 @@ import AboutCarousel from '@/components/aboutCarousel/AboutCarousel'
 import Broshour from '@/components/broshour/Broshour'
 import AboutInfo from '@/components/aboutInfo/AboutInfo'
 
-export default function page() {
+export default function Page() {
   return (
     <div className='aboutus-page-container mt-4 mt-md-5'>
       <AboutUs></AboutUs>

@@ -3,6 +3,9 @@
     background-color: white;
     border-radius: 6px;
 }
+div.register-wrapper{
+    width: 50%;
+}
 
 
 @media screen and (max-width:768px) {
@@ -10,5 +13,8 @@
     
         width: 100%;
     }
+    div.register-wrapper{
+    width: 90%;
+}
     
 }

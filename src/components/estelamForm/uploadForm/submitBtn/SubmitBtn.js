@@ -77,9 +77,9 @@ status,
   return (
     <div className="w-100 d-flex justify-content-center justify-content-lg-end submit-upload-form-btn  ">
       <button
-        disabled={status==="uploaded"}
+        disabled={status!="uploaded"}
         className={`bg_color_orange anjoman_medium fs_14 px-5 ${
-          !file ? "disable" : ""
+          status!="uploaded" ? "disable" : ""
         } `}
         onClick={clickSend}
       >

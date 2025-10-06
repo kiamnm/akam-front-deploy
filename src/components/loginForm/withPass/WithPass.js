@@ -47,7 +47,7 @@ export default function WithPass({
   };
 
   return (
-    <div className="mt-5 m-auto login-pass-container bg_color_white p-3">
+    <div className=" m-auto login-pass-container bg_color_white p-3">
       <p className="anjoman_bold fs_14">ورود به آکام با رمز عبور</p>
       <div className="input-container ">
         <input

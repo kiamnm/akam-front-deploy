@@ -4,20 +4,22 @@ import ClientLayout from '@/components/clientLayout/ClientLayout'
 // import { LoginProvider } from '@/context/LoginContext'
 import LoginWrapper from '@/components/loginWrapper/LoginWrapper'
 
-export default function Login() {
+export default function Page() {
   return (
-    <div >
-          <ClientLayout>
-            <div className='login-page-container   pt-5'>
+  
+      <> <div className='login-page-container    d-flex justify-content-center align-items-center'>
             {/* <LoginProvider> */}
             <LoginWrapper></LoginWrapper>
             {/* </LoginProvider> */}
             
-              
-            </div>
+              {/* <ClientLayout> */}
+           
             
-          </ClientLayout>
+          {/* </ClientLayout> */}
           
-        </div>
+            </div>
+      </>
+          
+       
   )
 }

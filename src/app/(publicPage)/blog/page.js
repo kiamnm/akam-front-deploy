@@ -16,7 +16,7 @@ const breadCrumbsData=[
 
     const bestArticleTitle={title:"برترین مقالات آکام"}
     const newestArticleTitle={title:"جدیدترین مقالات آکام"}
-export default async function page() {
+export default async function Page() {
   const bestArticles=await fetchBestArticles()
   const headerArticles=await fetchHeaderArticles()
   const newestArticles=await fetchNewestArticles()
@@ -32,7 +32,10 @@ export default async function page() {
           <h1 className="fs_16 anjoman_bold p-0 m-0">آهن آکام</h1>
         </div>
         <BreadCrumbs breadCrumbsData={breadCrumbsData}></BreadCrumbs>
-        <BlogHeader articleData={headerArticles} ></BlogHeader>
+        {headerArticles && (
+          <BlogHeader articleData={headerArticles} ></BlogHeader>
+        )}
+        
         {bestArticles && (
           <div className="pt-4">
           <ArticleRow articleData={bestArticles} titleData={bestArticleTitle}></ArticleRow>

@@ -20,7 +20,7 @@ import { FaUser } from "react-icons/fa";
 
 import "./style.css";
 const relatedArticleTitle={title:"مقالات مرتبط"}
-export default async function page(props) {
+export default async function Page(props) {
   const {id}=await props.params
   const article=await fetchEachArticle(id)
   console.log(article);

@@ -7,11 +7,20 @@ import ClientLayout from '../clientLayout/ClientLayout'
 export default async function BestArticles() {
     const bestArticleTitle={title:"برترین مقالات آکام",href:"/blog",btnTitle:"وبلاگ"}
     const bestArticles=await fetchBestArticles()
-  return (
+    if(bestArticles){
+       return (
     <ClientLayout>
         <ArticleRow articleData={bestArticles} titleData={bestArticleTitle}></ArticleRow>
     </ClientLayout>
         
    
   )
+    }else{
+ return (
+    <></>
+        
+   
+  )
+    }
+ 
 }

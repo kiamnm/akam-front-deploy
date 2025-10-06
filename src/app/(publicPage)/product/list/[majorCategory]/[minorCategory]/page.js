@@ -10,7 +10,7 @@ import akmDictionary from "@/utils/akamDictionary";
 import "./style.css"
 
 
-export default async function page(props) {
+export default async function Page(props) {
   
   let { majorCategory, minorCategory } = await props.params;
   let majorCategoryPersian=akmDictionary(majorCategory)

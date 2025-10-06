@@ -7,7 +7,7 @@ import OrderPagination from "@/components/userPanel/orderPagination/OrderPaginat
 import { OrderProvider } from "@/context/userPanel/Order";
 import OrderActions from "@/components/userPanel/orderActions/OrderActions";
 
-export default function page() {
+export default function Page() {
   
   return (
     <OrderProvider>

@@ -24,7 +24,7 @@ import { FaRegCircleCheck } from "react-icons/fa6";
 import ProUpload from "@/components/proUpload/ProUpload";
 
 
-export default function page() {
+export default function Page() {
   const router = useRouter();
   const searchParams = useSearchParams();
   const userObjid = searchParams.get("userId");

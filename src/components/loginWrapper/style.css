@@ -4,12 +4,17 @@
     background-color: white;
     border-radius: 8px;
 }
-
+div.login-wrapper{
+    width: 50%;
+}
 
 @media screen and (max-width:768px) {
     .login-page-container .phone-validation-container{
     
         width: 100%;
     }
+    div.login-wrapper{
+    width: 90%;
+}
     
 }

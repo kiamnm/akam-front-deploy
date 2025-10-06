@@ -9,7 +9,7 @@ import fetchEachProduct from "@/utils/products/fetchEachProduct";
 import fetchProductDescription from "@/utils/products/fetchProductDescription";
 import AddToBasketBtn from "@/components/addToBasketBtn/AddToBasketBtn";
 
-export default async function page(props) {
+export default async function Page(props) {
   
   const objId=await props.params.id
 

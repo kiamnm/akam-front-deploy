@@ -18,7 +18,7 @@ import fetchCloseTikcet from "@/utils/userpanel/ticket/fetchCloseTicket";
 import Link from "next/link";
 import ProUpload from "@/components/proUpload/ProUpload";
 
-export default function page() {
+export default function Page() {
   const searchParams = useSearchParams();
   const ticketObjid = searchParams.get("ticketId");
   const [ticket, setTicket] = useState(null);

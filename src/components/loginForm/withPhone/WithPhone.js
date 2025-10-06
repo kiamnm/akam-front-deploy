@@ -28,7 +28,7 @@ export default function WithPhone({
     }
   };
   return (
-    <div className="mt-5 m-auto login-phone-container bg_color_white p-3">
+    <div className=" m-auto login-phone-container bg_color_white p-3">
       <p className="anjoman_bold fs_14">ورود به آکام </p>
       <div className="input-container ">
         <input
@@ -57,10 +57,11 @@ export default function WithPhone({
           "ادامه"
         )}
       </button>
-      <div className="d-flex justify-content-center pt-4 pb-2 ">
+      <div className="d-flex justify-content-center align-items-center pt-4 pb-2 ">
         <p className="fs_14 anjoman_regular m-0 ">حساب کاربری ندارید؟ </p>
+        &nbsp;&nbsp;
         <Link
-          className="fs_14 anjoman_regular text-decoration-underline color_orange "
+          className="fs_14 anjoman_regular text-decoration-none underline color_orange "
           href="/register"
         >
           ساخت حساب کاربری
@@ -71,7 +72,7 @@ export default function WithPhone({
           onClick={() => {
             setFormState("password");
           }}
-          className="fs_14 anjoman_regular text-decoration-underline color_orange cursor_pointer p-0"
+          className="fs_14 anjoman_regular underline color_orange cursor_pointer p-0"
         >
           ورود با رمز عبور
         </p>

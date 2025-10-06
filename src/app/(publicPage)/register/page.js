@@ -7,12 +7,12 @@ import ClientLayout from '@/components/clientLayout/ClientLayout'
 import RegisterWrapper from '@/components/registerWrapper/RegisterWrapper'
 // import { RegisterProvider } from '@/context/RegisterContext'
 
-export default function Register() {
+export default function Page() {
   
   return (
-    <div >
-      <ClientLayout>
-        <div className='register-page-container   pt-5'>
+    
+      
+        <div className='register-page-container   d-flex justify-content-center align-items-center m-0'>
         {/* <RegisterProvider> */}
           <RegisterWrapper></RegisterWrapper>
         {/* </RegisterProvider> */}
@@ -20,8 +20,8 @@ export default function Register() {
           
         </div>
         
-      </ClientLayout>
       
-    </div>
+      
+  
   )
 }

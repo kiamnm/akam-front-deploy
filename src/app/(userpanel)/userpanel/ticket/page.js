@@ -7,7 +7,7 @@ import TicketTable from '@/components/userPanel/ticketTable/TicketTable'
 import TicketPagination from '@/components/userPanel/ticketPagination/TicketPagination'
 
 
-export default function page() {
+export default function Page() {
   return (
     <TicketProvider>
     <div className='tikcet-tab-container px-3 pt-3 d-flex flex-column  flex-grow-1'>

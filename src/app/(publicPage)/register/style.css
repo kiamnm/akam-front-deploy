@@ -1,4 +1,11 @@
 div.register-page-container{
     position: relative;
     z-index: 1;
+    min-height: calc(100dvh - 136px);
+    
+}
+
+div.register-page-loading-container{
+    min-height: calc(100dvh - 136px);
+    
 }

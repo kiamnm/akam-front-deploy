@@ -1,7 +1,7 @@
 import React from 'react'
 import "./style.css"
 
-export default function page() {
+export default function Page() {
   return (
     <div className='test-page'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod expedita deleniti maxime, dignissimos omnis cumque minus aliquid quasi libero, voluptatibus consequuntur voluptas repellendus ipsa perspiciatis quae facere nihil accusantium nam commodi quo soluta aspernatur magnam? Porro aspernatur facere aut hic libero facilis in, adipisci aliquid non fuga, numquam doloremque ab! Omnis maxime culpa minus placeat animi illum labore dolor, aliquid eaque exercitationem dicta dolores quasi! Cupiditate fugit autem praesentium a quaerat inventore ducimus velit incidunt voluptates necessitatibus. Quasi quibusdam a quod sunt sint at sequi, veniam labore, atque id hic reprehenderit earum esse debitis ipsum repudiandae dicta odio aliquam cum?
     

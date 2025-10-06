@@ -6,7 +6,7 @@ import ContactInfo from "@/components/contactInfo/ContactInfo";
 import ContactBanner from "@/components/contactBanner/ContactBanner";
 import ContactMap from "@/components/contactMap/ContactMap";
 
-export default function ContactUs() {
+export default function Page() {
   return (
     <div>
       {/* <svg

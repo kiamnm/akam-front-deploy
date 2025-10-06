@@ -69,3 +69,9 @@ div.each-product-page-container div.expelenation-box h3 {
     width: 100%;
 }
 }
+
+
+
+div.each-product-loading-container{
+     min-height: calc(100dvh - 136px);
+}

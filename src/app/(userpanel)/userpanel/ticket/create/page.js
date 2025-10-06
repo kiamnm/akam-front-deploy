@@ -16,7 +16,7 @@ import { successNotif, failNotif } from "@/utils/notif";
 import ProUpload from "@/components/proUpload/ProUpload";
 
 
-export default function page() {
+export default function Page() {
   const [file,setFile]=useState(null)
   const [uploadErr,setUploadErr]=useState("")
   const [subject,setSubject]=useState("")

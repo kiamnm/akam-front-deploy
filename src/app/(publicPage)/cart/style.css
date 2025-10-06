@@ -67,3 +67,12 @@ border-left: none;
 height: 100%;
 }
 }
+
+
+
+div.empty-cart-container{
+  min-height: calc(100dvh - 136px);
+}
+div.loading-cart-page-container{
+  min-height: calc(100dvh - 136px);
+}

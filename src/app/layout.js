@@ -25,6 +25,7 @@ export default function RootLayout({ children }) {
         <CartProvider>
           <NotifProvider>
           <body>
+            
             {children}
             <ToastContainer  />
           </body>

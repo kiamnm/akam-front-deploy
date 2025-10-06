@@ -7,7 +7,7 @@ import { BsExclamationCircle } from "react-icons/bs";
 import NextPreviousBtn from "@/components/orderProcess/nextPreviousBtn/NextPreviousBtn";
 import { IoMdInformationCircleOutline } from "react-icons/io";
 import { FaCircle } from "react-icons/fa";
-export default function page() {
+export default function Page() {
   return (
     <div className="step6 step-page-container bg_color_white rounded-2 flex-grow-1 px-3 py-4 d-flex flex-column">
       <Title step={6} stepName={"آپلود رسید پرداخت"}></Title>

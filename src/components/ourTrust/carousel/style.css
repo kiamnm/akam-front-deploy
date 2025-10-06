@@ -1,8 +1,13 @@
 
 
 div.our-trust-container  .slide-image{
-    width: 70px;
-    height: 70px;
+    
+    height: 72px;
+    
+}
+
+div.our-trust-container .slide-container {
+    background-color: #edededb6;
     
 }
 

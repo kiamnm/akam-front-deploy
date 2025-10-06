@@ -8,7 +8,7 @@ import ChangePassword from '@/components/userPanel/changePassword/ChangePassword
 import NewsFromPanel from '@/components/newsFromPanel/NewsFromPanel';
 
 
-export default function page() {
+export default function Page() {
   
 
   

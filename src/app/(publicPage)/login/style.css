@@ -1,4 +1,9 @@
 .login-page-container{
     position: relative;
+    top: 0;
     z-index: 1;
+    min-height: calc(100dvh - 136px);
+}
+.login-page-loading-container{
+    min-height: calc(100dvh - 136px);
 }

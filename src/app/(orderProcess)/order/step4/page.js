@@ -20,7 +20,7 @@ import { FaCircle } from "react-icons/fa";
 import { HiOutlineCurrencyDollar } from "react-icons/hi2";
 
 
-export default function page() {
+export default function Page() {
   const searchParams = useSearchParams();
   const userObjid = searchParams.get("userId");
   const orderObjid = searchParams.get("orderId");
@@ -208,34 +208,32 @@ export default function page() {
                   لطفا به نکات زیر توجه فرمایید:
                 </p>
               </div>
-              <p className="fs_14 anjoman_regular mb-1 d-flex align-items-baseline gap-2 text_justify">
-                <span className="d-flex align-items-center">
-                  <FaCircle style={{ fontSize: "7px" }} />
-                </span>
-                با توجه به نوسانات بازار، قیمت‌های اعلام شده در پیش فاکتور تا 
-                ۲۴ ساعت معتبر می‌باشند.
-              </p>
-              <p className="fs_14 anjoman_regular mb-1 d-flex align-items-baseline gap-2 text_justify">
-                <span className="d-flex align-items-">
-                  <FaCircle style={{ fontSize: "7px" }} />
-                </span>
-                جهت هرگونه ویرایش در سفارش، روی دکمه «مرحله قبل» کلیک کنید. توجه
-                داشته باشید که فرآیند بررسی مجددا انجام خواهد شد.
-              </p>
-              <p className="fs_14 anjoman_regular mb-1 d-flex align-items-baseline gap-2 text_justify">
-                <span className="d-flex align-items-center">
-                  <FaCircle style={{ fontSize: "7px" }} />
-                </span>
-                در صورتی که جزئیات پیش‌فاکتور مورد تایید شماست، روی دکمه «مرحله
-                بعد (پرداخت)» کلیک کنید.
-              </p>
-              <p className="fs_14 anjoman_regular mb-1 d-flex align-items-baseline gap-2 text_justify">
-                 <span className="d-flex align-items-center">
-                  <FaCircle style={{ fontSize: "7px" }} />
-                </span>
-                با انتخاب گزینه "فاکتور رسمی"، مبلغ ۹٪ مالیات بر ارزش افزوده به
-                مبلغ کل سفارش شما اضافه خواهد شد.
-              </p>
+             <p className="fs_14 anjoman_regular mb-1 d-flex align-items-baseline gap-2 text_justify">
+  <span className="d-flex align-items-center">
+    <FaCircle style={{ fontSize: 7 }} />
+  </span>
+  با توجه به نوسانات بازار، قیمت‌های اعلام شده در پیش فاکتور تا ۲۴ ساعت معتبر می‌باشند.
+</p>
+             <p className="fs_14 anjoman_regular mb-1 d-flex align-items-baseline gap-2 text_justify">
+  <span className="d-flex align-items-center">
+    <FaCircle style={{ fontSize: 7 }} />
+  </span>
+  جهت هرگونه ویرایش در سفارش، روی دکمه مرحله قبل کلیک کنید. توجه داشته باشید که فرآیند بررسی مجدداً انجام خواهد شد.
+</p>
+
+             <p className="fs_14 anjoman_regular mb-1 d-flex align-items-baseline gap-2 text_justify">
+  <span className="d-flex align-items-center">
+    <FaCircle style={{ fontSize: 7 }} />
+  </span>
+  در صورتی که جزئیات پیش فاکتور مورد تایید شماست، روی دکمه مرحله بعد پرداخت کلیک کنید.
+</p>
+
+             <p className="fs_14 anjoman_regular mb-1 d-flex align-items-baseline gap-2 text_justify">
+  <span className="d-flex align-items-center">
+    <FaCircle style={{ fontSize: 7 }} />
+  </span>
+  با انتخاب گزینه فاکتور رسمی، مبلغ ۹٪ مالیات بر ارزش افزوده به مبلغ کل سفارش شما اضافه خواهد شد.
+</p>
             </div>
             <div className="bill-container d-flex flex-column justify-content-between ">
               <div className="priceses-container">
@@ -295,24 +293,24 @@ export default function page() {
           </div>
         </div>
 
-        {isNextStepModalShow && (
-          <ProModal
-            text="  فشردن دکمه «تایید و ادامه» به منزله قبول نهایی تمام جزئیات و مبالغ این پیش فاکتور است.
-در مرحله بعد، اطلاعات لازم برای پرداخت به صورت کارت به کارت و ارسال فیش واریزی به شما نمایش داده خواهد شد.
-              "
-            firstBtnText="تایید و ادامه"
-            secondBtnText="ماندن در صفحه"
-            title={"مرحله بعد"}
-            isModalShow={isNextStepModalShow}
-            setIsModalShow={setIsNextStepModalShow}
-            icon={
-              <HiOutlineCurrencyDollar
-                style={{ fontSize: "34px", color: "#28A745" }}
-              />
-            }
-            clickFirstBtn={handleAcceptGoNext}
-          ></ProModal>
-        )}
+       {isNextStepModalShow && (
+  <ProModal
+    text={`فشردن دکمه «تایید و ادامه» به منزله قبول نهایی تمام جزئیات و مبالغ این پیش فاکتور است.
+در مرحله بعد، اطلاعات لازم برای پرداخت به صورت کارت به کارت و ارسال فیش واریزی به شما نمایش داده خواهد شد.`}
+    firstBtnText="تایید و ادامه"
+    secondBtnText="ماندن در صفحه"
+    title="مرحله بعد"
+    isModalShow={isNextStepModalShow}
+    setIsModalShow={setIsNextStepModalShow}
+    icon={
+      <HiOutlineCurrencyDollar
+        style={{ fontSize: 34, color: "#28A745" }}
+      />
+    }
+    clickFirstBtn={handleAcceptGoNext}
+  />
+)}
+
       </div>
     );
   } else {
