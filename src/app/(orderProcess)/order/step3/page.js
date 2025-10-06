@@ -12,6 +12,7 @@ import { successNotif,failNotif } from "@/utils/notif";
 import fetchGoPrevious3 from "@/utils/userpanel/order/fetchGoPrevious3";
 import NextPreviousBtn from "@/components/orderProcess/nextPreviousBtn/NextPreviousBtn";
 import { FaCircle } from "react-icons/fa";
+import { IoIosArrowDropright } from "react-icons/io";
 
 
 import "./style.css";
